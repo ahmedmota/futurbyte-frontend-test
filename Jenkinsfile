@@ -20,7 +20,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main', // Change to 'staging' for staging
-                url: 'https://github.com/ahmedmota/ahmedmota-futurbyte-frontend-test.git', Github:
+                url: 'https://github.com/ahmedmota/ahmedmota-futurbyte-frontend-test.git', Github:env.GIT_CREDENTIALS
             }
         }
         stage('Build App') {
