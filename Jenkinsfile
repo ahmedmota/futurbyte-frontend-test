@@ -21,7 +21,7 @@ pipeline {
             steps {
                 git branch: 'main', // Change to 'staging' for staging
                 url: 'https://github.com/ahmedmota/ahmedmota-futurbyte-frontend-test.git',
-                GIT_CREDENTIALS: 'Github' // Use the credentials ID you set up in Jenkins
+                credentialsId: 'Github' // Use the credentials ID you set up in Jenkins
             }
         }
         stage('Build App') {
