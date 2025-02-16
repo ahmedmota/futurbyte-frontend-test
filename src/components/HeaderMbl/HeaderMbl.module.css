@@ -1,0 +1,485 @@
+.header {
+  background-color: #26082a;
+  color: white;
+  padding: 10px 20px;
+  justify-content: center;
+  height: 104px;
+  padding-left: 120px;
+  padding-right: 120px;
+  display: none !important;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  flex-grow: 1;
+  margin-left: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navItem {
+  margin: 0 15px;
+  position: relative;
+}
+
+.navItem a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.dropdownArrow {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phoneIcon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.ctaButton {
+  width: 296px;
+  height: 56px;
+  padding: 20px 24px 20px 24px;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: unset;
+  color: #290a2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  display: none;
+}
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.dropdown {
+  background: #000000bf;
+  backdrop-filter: blur(13px);
+  position: absolute;
+  top: 95px;
+  width: 100%;
+  padding-top: 72px;
+  z-index: 1;
+  padding-bottom: 166px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.scale {
+  width: 365px;
+}
+.scale h3 {
+  font-size: 35px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1.5;
+}
+.dropdownContent {
+  display: flex;
+  justify-content: space-between;
+}
+.allServices {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  display: flex;
+  margin-top: 65px;
+  text-decoration: unset;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title {
+  font-size: 18px;
+  font-weight: 400;
+  color: white !important;
+}
+.list {
+  padding: unset;
+}
+.list li {
+  list-style: none;
+}
+.list li a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #a7a7a7;
+  text-decoration: unset;
+  margin-bottom: p;
+  padding-bottom: 10px !important;
+  display: flex;
+}
+.list li a:hover {
+  color: white;
+  font-weight: 500;
+}
+.serviceList {
+  width: 295px;
+}
+.serviceListNav {
+  width: 140px;
+}
+.serviceListPost {
+  width: 116px;
+}
+.serviceListTitle {
+  width: 128px;
+}
+.serviceListCategory {
+  width: 251px;
+}
+
+.header,
+.dropdown {
+  display: none;
+}
+.header {
+  display: flex;
+}
+.header,
+.dropdown {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.phoneIcon {
+  font-size: 20px;
+  margin-right: unset;
+  width: 30px;
+}
+.cta {
+  gap: 10px;
+}
+.header {
+  height: 70px;
+}
+.mobileMenu {
+  background: #000000bf;
+  backdrop-filter: blur(13px);
+  position: fixed;
+  top: 95px;
+  width: 100%;
+  padding-top: 10px;
+  z-index: 10;
+  padding-bottom: 20px;
+  height: auto;
+  display: none;
+  height: 100%;
+  overflow: scroll;
+  padding-bottom: 100px;
+}
+.mobileMenu::-webkit-scrollbar {
+  display: none;
+}
+.moblShort {
+  margin-left: 0;
+  padding-left: 0;
+}
+.moblShort li a {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #ffffff;
+  text-decoration: unset;
+  display: flex;
+  align-items: center;
+}
+.moblShort li {
+  list-style: none;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid #37133e;
+  padding-left: 18px;
+}
+.consitancy {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: unset;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.moblShort li a img {
+  margin-left: auto;
+  margin-right: 15px;
+}
+.subMenu li a {
+  font-size: 16px;
+  font-weight: 300;
+}
+.subMenu li {
+  list-style: none;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  border-bottom: unset;
+  padding-left: 18px;
+  padding-right: 15px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subMenu li img {
+  height: auto;
+}
+.subMenu {
+  margin-top: 10px;
+}
+.consitancycustom {
+  font-size: 18px;
+  font-weight: 500;
+  color: #b256bd;
+  padding-left: 3rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: unset;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.salesAdvisorSection {
+  background: #00000091;
+  backdrop-filter: blur(13px);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 670px;
+  position: fixed;
+  top: 70px;
+  z-index: 10;
+  right: 6%;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.salesAdvisorSection h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.salesAdvisorSection p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contactDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contactItem {
+  flex: 1 1 calc(50% - 10px);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.contactItem span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contactItem p {
+  margin: 5px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.requestCallback {
+  background: #b256bd;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.requestCallback span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.requestCallback p {
+  font-size: 16px;
+  margin: 0;
+  color: #f5e5f7;
+}
+.backcall {
+  width: 229px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.typically {
+  width: 241px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.typicallyTop {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.typicallyTop img {
+  width: 20px;
+  height: 20px;
+}
+
+.submenu-menu {
+  display: none;
+  margin-bottom: 25px;
+}
+
+.submenu-menu.submenu-active {
+  display: block !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    display: flex !important;
+  }
+  .phoneIconmbl {
+    width: 27px;
+  }
+  .mobileMenu {
+    display: block;
+    top: 65px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .salesAdvisorSection {
+    background: #00000091;
+    -webkit-backdrop-filter: blur(13px);
+    backdrop-filter: blur(13px);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    position: fixed;
+    top: 70px;
+    z-index: 10;
+    right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    /* padding-bottom: 24px; */
+    padding-bottom: 90px;
+    overflow-y: scroll;
+    height: 100%;
+  }
+  .salesAdvisorSection::-webkit-scrollbar {
+    overflow: scroll;
+  }
+  .salesAdvisorSection h3 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .salesAdvisorSection p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .contactItem span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .contactDetails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .requestCallback {
+    flex-direction: column;
+    display: unset;
+  }
+  .contactItem p {
+    font-size: 18px !important;
+  }
+  .backcall {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .salesAdvisorSection p {
+    margin-bottom: 0px;
+  }
+  .contactDetails {
+    margin-top: 25px;
+  }
+  .subMenu {
+    padding-left: 0px;
+  }
+  .subMenu li {
+    padding-bottom: 3px;
+  }
+  .consitancycustom img {
+    margin-left: unset !important;
+    margin-right: 15px;
+  }
+  .consitancycustom {
+    font-size: 18px;
+    font-weight: 500;
+    color: #b256bd !important;
+    padding-left: 18px;
+  }
+  .mobileMenu {
+    height: 100%;
+  }
+}

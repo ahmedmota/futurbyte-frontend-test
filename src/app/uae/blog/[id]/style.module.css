@@ -1,0 +1,477 @@
+.one-section-vector {
+  position: relative;
+  overflow: visible;
+}
+
+.one-section-vector::before {
+  position: absolute;
+  content: " ";
+  background-image: url("../../../../../public/blog-detail-top-vector.svg");
+  background-repeat: no-repeat;
+  right: 0;
+  top: -7%;
+  width: 255px;
+  height: 417px;
+  z-index: -1;
+}
+
+.two-section-vector {
+  position: relative;
+  overflow: visible;
+}
+
+.two-section-vector::before {
+  position: absolute;
+  content: " ";
+  background-image: url("../../../../../public/blog-detail-center-vector.svg");
+  background-repeat: no-repeat;
+  left: 0;
+  bottom: 23%;
+  width: 100%;
+  height: 548px;
+  z-index: -1;
+  transform: rotate(0deg);
+}
+
+.related-blogs-main-div {
+  position: relative;
+}
+
+.related-blogs-main-div::before {
+  position: absolute;
+  content: " ";
+  background-image: url("../../../../../public/related-blog-vector.svg");
+  background-repeat: no-repeat;
+  transform: rotate(00deg);
+  width: 324px;
+  height: 417px;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  right: 0;
+  top: 30%;
+}
+
+/* table fix  */
+
+.html-content tbody tr td {
+  height: fit-content !important;
+}
+
+/* Code by Maqsood Date: 13/01/2024 */
+.html-content-main-col .html-content img {
+  height: 360px;
+}
+
+.html-content-main-col .html-content h1,
+.html-content-main-col .html-content h2,
+.html-content-main-col .html-content h1 strong,
+.html-content-main-col .html-content h2 strong,
+.html-content-main-col .html-content h1 b,
+.html-content-main-col .html-content h2 b,
+.html-content-main-col .html-content h2 b {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #0a0d31;
+}
+
+.html-content-main-col .html-content h3,
+.html-content-main-col .html-content h3 b,
+.html-content-main-col .html-content h3 strong,
+.html-content-main-col .html-content h4,
+.html-content-main-col .html-content h4 b,
+.html-content-main-col .html-content h4 strong {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: left;
+  color: #0a0d31;
+}
+
+.html-content-main-col .html-content h1,
+.html-content-main-col .html-content h2,
+.html-content-main-col .html-content h3,
+.html-content-main-col .html-content h4 {
+  margin: 0;
+}
+
+/* .html-content-main-col .html-content h1,
+.html-content-main-col .html-content h2,
+.html-content-main-col .html-content h3,
+.html-content-main-col .html-content h4 {
+  margin-bottom: 16px;
+} */
+
+/* .html-content-main-col .html-content div div h2:first-of-type {
+  margin-top: 40px;
+} */
+
+.html-content-main-col .html-content h2:first-of-type {
+  padding-bottom: 8px;
+}
+
+.html-content-main-col .html-content div div h2 {
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+
+.html-content-main-col .html-content p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #3b3b3b;
+}
+
+.html-content-main-col .html-content p strong {
+  font-weight: 600;
+}
+
+.html-content-main-col .html-content p {
+  padding-top: 8px;
+  padding-bottom: 16px;
+  margin: 0;
+}
+
+.html-content-main-col .html-content table {
+  margin-top: 8px;
+}
+
+.html-content-main-col .html-content table tr:first-of-type {
+  background-color: #290a2f;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: left;
+
+  color: #ffffff;
+}
+
+.html-content-main-col .html-content table {
+  overflow: auto;
+  scrollbar-width: thin; 
+  scrollbar-color: #888 #f1f1f1; 
+}
+
+.html-content-main-col .html-content::-webkit-scrollbar {
+  width: 5x;
+  height: 5px;
+}
+
+.html-content-main-col .html-content::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.html-content-main-col .html-content::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.html-content-main-col .html-content table tr:first-of-type td,
+.html-content-main-col .html-content table tr:first-of-type th {
+  padding: 12px 8px;
+  border: 1px solid #290a2f;
+  color: #ffffff;
+}
+
+.html-content-main-col .html-content table tr:first-child td strong,
+.html-content-main-col .html-content table tr:first-child th strong {
+  font-weight: 600;
+}
+
+.html-content-main-col .html-content table tr:first-of-type td span,
+.html-content-main-col .html-content table tr:first-of-type th span,
+.html-content-main-col .html-content table tr:first-of-type td strong span,
+.html-content-main-col .html-content table tr:first-of-type th strong span,
+.html-content-main-col .html-content table tr:first-of-type td p,
+.html-content-main-col .html-content table tr:first-of-type th p {
+  color: #FFFFFF;
+}
+
+/* 
+.html-content-main-col .html-content table tr:first-child td b,
+.html-content-main-col .html-content table tr:first-child td span,
+.html-content-main-col .html-content table tr:first-child td p,
+.html-content-main-col .html-content table tr:first-child td strong {
+  background-color: #290a2f;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: left;
+  border: 1px solid #290a2f;
+  color: #ffffff;
+  padding: 12px 8px;
+} */
+
+.html-content-main-col .html-content table tbody tr:first-child td strong,
+.html-content-main-col .html-content table tbody tr:first-child td b,
+.html-content-main-col .html-content table tbody tr:first-child td span,
+.html-content-main-col .html-content table tbody tr:first-child td p {
+  border: none;
+  padding: 0;
+}
+
+.html-content-main-col .html-content table tbody tr:not(:first-child) td,
+.html-content-main-col .html-content table tbody tr:not(:first-child) td span,
+.html-content-main-col .html-content table tbody tr:not(:first-child) td p,
+.html-content-main-col .html-content table tbody tr:not(:first-child) td b,
+.html-content-main-col
+  .html-content
+  table
+  tbody
+  tr:not(:first-child)
+  td
+  strong {
+  border: 1px solid #eaecf0;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #3b3b3b;
+  padding: 16px 8px;
+}
+
+.html-content-main-col .html-content table tbody tr:not(:first-child) td strong,
+.html-content-main-col .html-content table tbody tr:not(:first-child) td p,
+.html-content-main-col .html-content table tbody tr:not(:first-child) td b,
+.html-content-main-col .html-content table tbody tr:not(:first-child) td span {
+  border: none;
+  padding: 0;
+}
+
+.html-content-main-col .html-content table tbody tr:not(:first-child) td p,
+.html-content-main-col
+  .html-content
+  table
+  tbody
+  tr:not(:first-child)
+  td
+  p
+  strong {
+  margin: 0;
+}
+
+.html-content-main-col .html-content ol li strong {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: left;
+  color: #0a0d31;
+}
+
+.html-content-main-col .html-content ol li {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #3b3b3b;
+  margin-bottom: 16px;
+}
+
+.html-content-main-col .html-content ul li strong {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: left;
+  color: #0a0d31;
+}
+
+.html-content-main-col .html-content ul li {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #3b3b3b;
+}
+
+.html-content-main-col a {
+  text-decoration: none;
+}
+
+.html-content-main-col sup {
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: flex-start; /* Align items to the left */
+  background-color: #f8f4fc;
+  border-radius: 10px;
+  padding: 20px;
+  color: #1a1a1a;
+  position: relative; /* For positioning ::after */
+  background-image: url("https://fb-co-strapi.s3.me-central-1.amazonaws.com/Frame_1618867511_500c36bec3.png");
+  top: unset;
+  line-height: unset;
+  padding-right: 120px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+.html-content-main-col sup::before {
+  content: "Reach Out To Us ›";
+  display: flex;
+  margin-top: 16px; /* Space below the main text */
+  margin-bottom: 8px; /* Space below the main text */
+  padding: 10px 20px;
+  background-color: #a65eb8;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  order: 2; /* Ensures this appears after the main content */
+  align-self: flex-start; /* Align to the left */
+  cursor: pointer;
+  font-family: Inter;
+  width: 151px;
+  height: 35.36px;
+  padding: 0 15.15px;
+  justify-content: center;
+  align-items: center;
+  gap: 3.79px;
+  border-radius: 7.58px;
+  font-size: 11.37px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.html-content-main-col sup::after {
+  content: "";
+  display: inline-block;
+  width: 100px; /* Adjust image width */
+  height: 100px; /* Adjust image height */
+  background-image: url("https://fb-co-strapi.s3.me-central-1.amazonaws.com/email_file_1_0f36079587.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute; /* Position it on the right */
+  top: 50%; /* Center vertically */
+  right: 20px; /* Add space from the right edge */
+  transform: translateY(-50%);
+}
+
+.html-content-main-col a:has(s) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.html-content-main-col s {
+  display: flex;
+  background-color: #a65eb8;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 151px;
+  height: 35.36px;
+  padding: 0 15.15px 0 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 3.79px;
+  border-radius: 7.58px;
+  font-size: 11.37px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+}
+
+.html-content-main-col s::after {
+  background-image: url("./../../../../../public/arrow-right-reach.svg");
+  position: absolute;
+  right: 0;
+  content: " ";
+  top: 11px;
+  right: 22px;
+  width: 10.1px;
+  height: 10.1px;
+}
+
+.wrapped-s-tag {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .html-content-main-col {
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .t-main {
+    padding: 0;
+  }
+
+  .p-mob-x {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .p-mob-x-last {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .html-content-main-col .html-content table tbody tr:first-child td,
+  .html-content-main-col .html-content table tbody tr:first-child td b,
+  .html-content-main-col .html-content table tbody tr:first-child td span,
+  .html-content-main-col .html-content table tbody tr:first-child td p,
+  .html-content-main-col .html-content table tbody tr:first-child td strong {
+    line-height: 19.2px;
+  }
+
+  .html-content-main-col .html-content table tbody tr:not(:first-child) td,
+  .html-content-main-col .html-content table tbody tr:not(:first-child) td span,
+  .html-content-main-col .html-content table tbody tr:not(:first-child) td p,
+  .html-content-main-col .html-content table tbody tr:not(:first-child) td b,
+  .html-content-main-col
+    .html-content
+    table
+    tbody
+    tr:not(:first-child)
+    td
+    strong {
+    line-height: 19.6px;
+  }
+
+  .html-content-main-col .html-content img {
+    height: auto;
+    width: auto;
+  }
+}
+
+.row-sticky-parent {
+  min-height: 100vh;
+}
+
+.sticky-col {
+  position: sticky;
+  top: 120px; 
+  height: fit-content;
+  align-self: flex-start;
+}
+
+@media (max-width: 992px) {
+  .sticky-col {
+    position: static; 
+  }
+}

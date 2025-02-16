@@ -1,0 +1,128 @@
+.team-card {
+  border-color: #d2d2d2;
+  border-radius: 16px;
+  position: relative;
+  border: 0;
+  cursor: pointer;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+.team-profile-main {
+  border: 1px solid #d2d2d2;
+  border-bottom: none;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  padding: 24px 18px 0px 18px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 302px;
+  background-image: url("../../../../../../public/backlogo-futurbyte.svg");
+}
+
+.team-profile-main-mb {
+  background-image: url("../../../../../../public/back-logo.svg");
+}
+
+.team-profile-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../../../../../public/back-logo-overlay.svg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  border-radius: 16px;
+}
+
+.team-card.hovered .team-profile-main {
+  background-color: #fcf6ff;
+  border-color: #fcf6ff;
+}
+
+.team-card.hovered img {
+  filter: none;
+}
+
+.team-card img {
+  filter: grayscale(100%);
+  position: relative;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.team-card-body {
+  border: 1px solid #d2d2d2;
+  text-align: center;
+  position: relative;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.team-card.hovered .team-card-body {
+  border: 1px solid #d2d2d2;
+}
+
+.team-name {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+}
+
+.team-designation {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .team-card img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-card {
+    background-color: #fcf6ff;
+    border-color: #fcf6ff;
+  }
+
+  .team-card .team-card-body {
+    border: 1px solid #d2d2d2;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+
+  .team-profile-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../../../../../public/back-logo-overlay.svg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    border-radius: 16px;
+  }
+
+  .team-profile-main {
+    background-image: url("../../../../../../public/back-logo.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .team-card img {
+    filter: unset;
+  }
+}

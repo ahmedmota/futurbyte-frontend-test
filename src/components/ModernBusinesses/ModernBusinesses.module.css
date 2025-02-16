@@ -1,0 +1,151 @@
+.stockImageposi {
+  position: relative;
+}
+.navTabs {
+  width: auto;
+  height: 52px;
+  padding: 19px 10px;
+  border-radius: 6px;
+  border: 1.5px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a0d31;
+  font-weight: 500;
+}
+.establish {
+  max-width: 1095px;
+  margin: 0 auto;
+}
+.navTabs {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0a0d31;
+}
+.nav-menus-wrapper {
+  display: flex;
+}
+.navMenus {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  margin-bottom: 39px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: scroll;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-menus-item {
+  flex-shrink: 0;
+  display: flex;
+}
+.listBullet {
+  display: flex;
+}
+.bulletList {
+  padding-left: unset;
+}
+.bulletList li {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 16px;
+  align-items: center;
+  width: fit-content;
+}
+.bulletList li a {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: fit-content;
+}
+.activeTab {
+  background-color: #290a2f;
+}
+.activeTab {
+  color: #ffffff !important;
+}
+.navTabs:hover {
+  color: unset;
+}
+.propsPara p {
+  padding-right: 75px !important;
+}
+.stockImage {
+  position: relative;
+}
+.stockImage::before {
+  position: absolute;
+  content: "";
+  background: url(../../../public/bgline.svg);
+  background-repeat: no-repeat;
+  width: 152px;
+  height: 109%;
+  top: -19px;
+  right: -19px;
+  z-index: 0;
+  border-radius: 11px;
+}
+.digitalSolutions .digitalSolutionsContainer {
+  transition: transform 0.7s ease-out; /* Optional: smooth transition */
+}
+.digitalSolutions .digitalSolutionsContainer h2 {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #0a0d31;
+}
+.bg-allow-modern {
+  background-image: url("../../../public/bg-vector-modern.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .stockImage::before {
+    width: 152px;
+    height: 109%;
+    top: -12px;
+    right: -11px;
+    z-index: 0;
+    border-radius: 11px;
+  }
+  .stockImage {
+    position: relative;
+    width: 97%;
+  }
+
+  .establish {
+    max-width: unset;
+    margin: unset;
+  }
+  .navTabs {
+    font-size: 16px;
+  }
+  .digitalSolutions {
+    margin-bottom: 0px;
+    text-align: center;
+    padding-bottom: 40px !important;
+    padding-top: 40px !important;
+  }
+  .bulletList li,
+  .bulletList li a {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .digitalSolutions {
+    padding-top: 0;
+  }
+  .propsPara p {
+    padding-right: 0px !important;
+  }
+  .propsPara h4 {
+    font-size: 26px !important;
+  }
+  .digitalSolutions .digitalSolutionsContainer h2 {
+    width: 100%;
+  }
+}

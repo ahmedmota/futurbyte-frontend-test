@@ -1,0 +1,88 @@
+.cost-form-div {
+  padding: 32px 24px;
+  border: 1px solid #656565;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #ffffff;
+}
+
+.cost-form-div h2 {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43.2px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #0a0d31;
+  margin: 0;
+}
+
+.input-main-top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-main-div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-main-div label {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.2px;
+  text-align: left;
+  color: #3b3b3b;
+}
+
+.input-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  border: 1.5px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 16px;
+  gap: 12px;
+}
+
+.input-div .input-div-img {
+  padding-right: 12px;
+  border-right: 1.5px solid #d9d9d9;
+}
+
+.cost-input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  backdrop-filter: blur(10px);
+  filter: blur(3.5px);
+  background: transparent;
+  color: #9a9a9a;
+  border: none;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 72px;
+  text-align: left;
+}
+
+.cost-input.cost-input-active {
+  backdrop-filter: unset;
+  filter: none;
+}
+
+@media screen and (max-width: 768px) {
+  .cost-form-div h2 {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: left;
+  }
+}

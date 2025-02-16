@@ -1,0 +1,41 @@
+{
+  "name": "futubytwebsite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@livechat/widget-react": "^1.3.3",
+    "@next/third-parties": "^15.1.1",
+    "aws-sdk": "^2.1692.0",
+    "bootstrap": "^5.3.3",
+    "framer-motion": "^11.15.0",
+    "next": "14.2.18",
+    "node-html-parser": "^6.1.13",
+    "nodemailer": "^6.9.16",
+    "react": "^18",
+    "react-bootstrap": "^2.10.5",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18",
+    "react-form-stepper": "^2.0.3",
+    "react-intersection-observer": "^9.14.0",
+    "react-slick": "^0.30.2",
+    "react-typed": "^2.0.12",
+    "react-typewriter-effect": "^1.1.0",
+    "sharp": "^0.33.5",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.15",
+    "typed.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.18",
+    "html-minifier": "^4.0.0",
+    "jsdom": "^25.0.1"
+  }
+}

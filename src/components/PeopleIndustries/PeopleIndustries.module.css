@@ -1,0 +1,152 @@
+.peopleIndustries {
+  position: relative;
+  background-color: white;
+}
+
+.peopleIndustries::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(45deg, #173b9c, #8639be);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  z-index: 1;
+}
+.spaceIndustries {
+  padding-left: 52px;
+  padding-right: 54px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  display: flex;
+  align-items: center;
+}
+.deliever {
+  margin-right: 4%;
+}
+.starLine {
+  position: relative;
+}
+.starLine::after {
+  position: absolute;
+  content: "";
+  background: url(/herozontal.png);
+  width: 1px;
+  height: 180px;
+  right: 30px;
+  top: 13px;
+  left: 0;
+  margin: 0 auto;
+}
+.starLine::before {
+  position: absolute;
+  content: "";
+  background: url(/verticalline.png);
+  width: 365px;
+  height: 2px;
+  right: 7px;
+  top: 47%;
+  left: 0;
+  margin: 0 auto;
+}
+.horizontalSlides {
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  .dummyText {
+    font-size: 27px;
+  }
+  .people {
+    font-size: 18px;
+  }
+  .layoutClass p,
+  .deliever p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .peopleIndustries {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .dummyText {
+    font-size: 24px;
+    text-align: center;
+  }
+  .ImageLorem {
+    display: block;
+    margin: 0 auto;
+  }
+  .deliever {
+    margin-right: 2%;
+    text-align: unset;
+  }
+  .starLine {
+    position: relative;
+    margin-top: 40px;
+  }
+  .starLine::after {
+    top: -30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .verticalSlides {
+    display: none !important;
+  }
+  .horizontalSlides {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .spaceIndustries {
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+  .starLine::before {
+    top: 49%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .peopleIndustries {
+    position: relative;
+    background-color: white;
+    width: 95%;
+  }
+  .people {
+    font-size: 18px;
+  }
+  .layoutClass,
+  .deliever {
+    text-align: center;
+  }
+  .layoutClass p,
+  .deliever p {
+    max-width: 99%;
+  }
+  .starLine::after {
+    top: -2px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .starLine::after {
+    right: -16px;
+  }
+  .starLine::before {
+    width: 265px;
+  }
+  .spaceIndustries {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+  .horizontalSlides section {
+    margin-bottom: 0;
+  }
+  .removeSpace {
+    padding: 0;
+  }
+}

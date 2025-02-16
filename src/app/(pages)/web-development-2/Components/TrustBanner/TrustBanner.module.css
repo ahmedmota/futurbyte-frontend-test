@@ -1,0 +1,138 @@
+.trust-banner-main {
+  background-image: url("../../../../../../public/trust-bg.svg");
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  padding: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background-size: cover;
+}
+
+.trust-banner-main a {
+  text-decoration: none;
+}
+
+.trust-banner-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.trust-banner-main h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.trust-banner-main p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  width: 65%;
+  text-align: center;
+}
+
+.trust-banner-btns-main {
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  overflow-clip-margin: padding-box;
+  padding: 0px 20px;
+  width: 100%;
+}
+
+.trust-banner-btns-main::-webkit-scrollbar {
+  display: none;
+}
+
+.trust-banner-btn {
+  padding: 12px 32px;
+  border-radius: 12px;
+  border: 1px solid #787878;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffff;
+  background: transparent;
+  text-wrap-mode: nowrap;
+  margin-left: 20px;
+}
+
+.schedule-btn {
+  background-color: #b256bd;
+  padding: 20px 24px;
+  border-radius: 6px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.schedule-btn span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.trust-banner-main h1 {
+  max-width: 860px;
+  margin-bottom: 25px;
+}
+@media (max-width: 992px) {
+  .trust-banner-main h1 {
+    max-width: unset;
+    margin-bottom: unset;
+  }
+  .trust-banner-main {
+    padding: 30px 40px;
+  }
+
+  .trust-banner-main p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .trust-banner-main a {
+    white-space: nowrap;
+  }
+  .trust-banner-main {
+    padding: 28px 0px;
+    background-position: center;
+  }
+
+  .trust-banner-main-content {
+    padding: 0px 18px;
+  }
+
+  .trust-banner-main-content h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: center;
+  }
+
+  .trust-banner-main p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .trust-banner-main {
+    border-radius: 0px;
+  }
+}

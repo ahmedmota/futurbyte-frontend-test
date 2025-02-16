@@ -1,0 +1,13 @@
+.imageSlider {
+  margin-top: 37px;
+}
+.logoSlider {
+  width: 96% !important;
+  height: 104px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 12px;
+  border: 1px solid #cdcdcd;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}

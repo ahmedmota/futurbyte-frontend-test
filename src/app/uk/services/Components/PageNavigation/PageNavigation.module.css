@@ -1,0 +1,64 @@
+.appdevelopment {
+  display: flex;
+  gap: 30px;
+}
+.appdevelopment a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #89898b;
+  text-decoration: unset;
+}
+.bussines {
+  box-shadow: 6px 36px 81px 0px #0000001a;
+  padding-bottom: 33px;
+  padding-top: 43px;
+}
+.active {
+  position: relative;
+}
+.active {
+  color: #b256bd !important;
+}
+.active::after {
+  position: absolute;
+  content: "";
+  width: -webkit-fill-available;
+  left: 0;
+  bottom: -33px;
+  border: 2px solid #b256bd;
+}
+
+@media screen and (max-width: 1400px) {
+  .appdevelopment a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .appdevelopment a {
+    font-size: 15px;
+  }
+  .appdevelopment {
+    display: flex;
+    gap: 16px;
+  }
+  .appdevelopment a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .appdevelopment {
+    display: flex;
+    gap: 16px;
+    overflow: scroll;
+    white-space: nowrap;
+  }
+  .appdevelopment a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bussines {
+    margin-bottom: 60px;
+  }
+}

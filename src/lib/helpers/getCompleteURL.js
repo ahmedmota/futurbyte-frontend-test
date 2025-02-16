@@ -1,0 +1,1 @@
+export const getCompleteURL = (url) => url ? `${process.env.NEXT_PUBLIC_FE_ORIGIN}/${url}` : "";

@@ -1,0 +1,25 @@
+.imageSlider {
+  margin-top: 37px;
+}
+.imageSlider .logoSlider {
+  position: relative;
+}
+.imageSlider .logoSlider::after {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(#ffffff00, #706f6f, #706f6f, #ffffff00);
+  width: 1px;
+  height: 63px;
+  right: 45px;
+  top: 0px;
+}
+
+@media (max-width: 768px) {
+  .imageSlider .logoSlider::after {
+    right: 25px;
+  }
+
+  .container-slide-logo {
+    padding: 0;
+  }
+}

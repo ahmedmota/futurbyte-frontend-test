@@ -1,0 +1,84 @@
+.augmentation-cards h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #0a0d31;
+}
+
+.augmentation-cards p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #3b3b3b;
+}
+
+.augmentation-card {
+  border-radius: 12px;
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.augmentation-card-body {
+  padding: 20px;
+  gap: 18px;
+}
+
+.link-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-decoration: unset;
+  color: #290a2f;
+  position: relative;
+}
+
+.augmentation-card-content {
+  gap: 24px;
+  text-align: center;
+}
+
+.augmentation-card-content h3 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  color: #0a0d31;
+  margin: 0;
+}
+
+.augmentation-card-content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #3b3b3b;
+  margin: 0;
+}
+
+.augmentation-cards .first-item h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #0a0d31;
+}
+
+.augmentation-cards .first-item p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #3b3b3b;
+}
+
+@media (max-width: 768px) {
+  .augmentation-cards .first-item h3 {
+    font-size: 28px;
+    line-height: 33.6px;
+    text-align: center;
+  }
+
+  .augmentation-cards .first-item p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+}

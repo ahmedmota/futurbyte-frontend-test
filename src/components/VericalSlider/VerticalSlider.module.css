@@ -1,0 +1,20 @@
+.slideContent {
+  width: 175px;
+  height: 180px;
+  padding: 23px;
+  border-radius: 12px;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.peacehomvibes {
+  position: relative;
+  left: 47px;
+}
+
+@media (max-width: 768px) {
+  .peacehomvibes {
+    left: 0px;
+  }
+}

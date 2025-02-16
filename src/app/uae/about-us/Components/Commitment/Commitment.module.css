@@ -1,0 +1,60 @@
+.commitment-card {
+  border: 1px solid #cdcdcd;
+  padding: 24px 20px 0px 20px;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0px;
+  border-radius: 12px;
+}
+
+.commitment-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  padding: 0px;
+}
+
+.commitment-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.c-title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  text-align: center;
+  color: #0a0d31;
+}
+
+.c-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  color: #3b3b3b;
+}
+
+.commitment-body h4 {
+  height: 15%;
+}
+
+.commitment-body p {
+  flex: 1;
+}
+
+.commitment-body h4,
+.commitment-body p {
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .c-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

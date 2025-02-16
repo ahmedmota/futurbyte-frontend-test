@@ -1,0 +1,116 @@
+.choose-card {
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid #000000;
+  position: relative;
+  flex: 1;
+  background-color: #ffffff;
+  height: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-card.active-card {
+  background-color: #250c2d;
+  border-color: #000000;
+}
+
+.choose-card .choose-card-input {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 19.99px;
+  height: 20px;
+}
+
+.choose-card .choose-card-input:checked,
+.choose-card .choose-card-input:focus,
+.choose-card .choose-card-input:active {
+  accent-color: #ffffff;
+}
+
+.choose-card .choose-card-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.choose-card .choose-card-content .choose-content-box {
+  border-radius: 50%;
+  border: 1px solid #000000;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-card .choose-card-content .choose-content-box img {
+  width: inherit;
+  height: inherit;
+}
+
+.choose-card.active-card .choose-card-content .choose-content-box {
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
+.choose-card-content p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.2px;
+  text-align: center;
+  color: #3b3b3b;
+  margin: 0;
+}
+
+.choose-card.active-card .choose-card-content p {
+  color: #ffffff;
+}
+
+.choose-card-all {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    200px
+  ); /* Each card is 200px, and adjusts based on available space */
+  gap: 24px;
+  justify-content: start;
+}
+
+.choose-card-all.first-cards {
+  display: grid;
+  /* grid-template-columns: repeat(
+    auto-fit,
+    424px
+  );  */
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 24px;
+  justify-content: start;
+}
+
+@media screen and (max-width: 768px) {
+  .choose-card-all {
+    grid-template-columns: repeat(
+      auto-fit,
+      163.5px
+    ); /* Each card is 200px, and adjusts based on available space */
+    gap: 16px;
+  }
+
+  .choose-card-all.first-cards {
+    grid-template-columns: repeat(
+      auto-fit,
+      163.5px
+    ); /* Each card is 200px, and adjusts based on available space */
+    gap: 16px;
+  }
+
+  .choose-card .choose-card-content .choose-content-box {
+    width: 56px;
+    height: 56px;
+  }
+}

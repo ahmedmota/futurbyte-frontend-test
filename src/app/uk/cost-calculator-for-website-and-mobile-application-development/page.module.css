@@ -1,0 +1,166 @@
+.calculator {
+  background-color: #fcf6ff;
+  padding: 10px 100px 10px 100px;
+}
+
+.dataInput {
+}
+.estimate {
+}
+
+.categoryHeading {
+  font-size: 30px;
+  font-weight: 600;
+  align-content: center;
+}
+.Previous {
+  height: 56px;
+  padding: 20px 20px 20px 20px;
+  background: #ffffff;
+  font-size: 14px !important;
+  font-weight: 500;
+  color: #250c2d;
+  text-decoration: unset;
+  border: #250c2d solid thin;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.Previous:hover {
+  background-color: #b256bd;
+  border: 0;
+  color: #ffffff;
+}
+
+.Next {
+  height: 56px;
+  padding: 20px 20px 20px 20px;
+  background: #250c2d;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: unset;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.Next:hover {
+  background-color: #b256bd;
+}
+
+.card {
+  width: 18rem;
+  border: 1px solid #c2c2c2;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+}
+.card:hover {
+  background-color: #250c2d;
+  color: #ffffff;
+}
+.cardInput {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #656565;
+  opacity: 0.5px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.cardIcon {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #4b225e;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.cardImg {
+  width: 40px;
+  height: 40px;
+}
+.cardLabel {
+  color: inherit;
+  font-weight: 600;
+}
+
+.cardInput:checked {
+  background-color: #ffffff; /* White background when checked */
+  border-color: #656565; /* Border remains the same */
+}
+
+.cardInput:focus {
+  box-shadow: none;
+  border-color: #656565;
+}
+
+.cardInput:hover {
+  border-color: #250c2d; /* Darker border color on hover */
+}
+.cardInput:checked {
+  background-color: #ffffff; /* White background when checked */
+  border-color: #656565; /* Purple border */
+  color: #656565; /* Tick color (gray) */
+}
+
+.cardInput:checked::after {
+  content: "✔"; /* Checkmark symbol */
+  color: #656565; /* Gray tick color */
+  font-size: 14px; /* Adjust size as needed */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.formLabel {
+  color: #0a0d31;
+  font-size: 43px;
+}
+
+.formLabel {
+  color: #3b3b3b;
+  font-size: 12px;
+}
+
+.inputGroup {
+  border: #d9d9d9 solid thin;
+  border-radius: 5px;
+  height: 56px;
+}
+
+.inputGroupText {
+  background-color: #ffffff;
+  border: 0;
+  padding: 10px;
+  padding-right: 5px;
+}
+
+.inputGroupText::after {
+  content: "|";
+  padding-left: 5px;
+  color: #d9d9d9;
+}
+
+.inputBox:focus {
+  box-shadow: none;
+  border-color: #656565;
+  color: #9a9a9a;
+  size: 18px;
+  font-weight: 500;
+}
+
+.inputBox:disabled {
+  background-color: #ffffff;
+  color: #9a9a9a;
+}

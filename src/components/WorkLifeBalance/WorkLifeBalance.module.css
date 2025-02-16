@@ -1,0 +1,55 @@
+/* -------- */
+.valuesSection {
+  padding-top: 93px;
+}
+
+.valueItem .icon {
+  flex-shrink: 0;
+}
+
+.valueItem h5 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  color: #0a0d31;
+}
+
+.backgroundImage {
+  background-image: url(../../../public/background_worklifebalance.png);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 100%;
+}
+.desrciption {
+  font-size: 40px;
+  font-weight: 600;
+  color: #0a0d31;
+}
+.valueItem p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b3b3b;
+  line-height: 27px;
+}
+
+@media (max-width: 768px) {
+  .valuesSection {
+    padding-top: 40px;
+  }
+
+  .desrciption {
+    font-size: 27px;
+    line-height: 32.4px;
+  }
+
+  .valueItem h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .valueItem p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

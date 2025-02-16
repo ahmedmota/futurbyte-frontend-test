@@ -1,0 +1,282 @@
+.requirement {
+  background-color: inherit;
+  border-radius: 24px;
+  color: #ffffff;
+  padding: 28px 29px 12px 29px;
+}
+
+.requirement-inner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5px;
+  text-align: start;
+}
+
+.requirement-inner-content h2 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+}
+
+.requirement-inner-content p {
+  margin: 1rem 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.requirement-section-p1 {
+  padding: 0px 11.5rem 0px 0px;
+}
+
+.requirement-section-p1 h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #0a0d31;
+  padding: 0 6.5rem 0 0;
+}
+
+.requirement-section-p1 p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #3b3b3b;
+  margin-bottom: 1rem !important;
+}
+
+.requirement-section-p1 a {
+  height: 56px;
+  padding: 0 24px;
+  gap: 6px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #250c2d;
+  border-radius: 6px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Swiper  */
+.mySwiperMainAugmentation .swiper {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide {
+  background-color: rgba(247, 232, 254, 1);
+  transform: rotateZ("3deg");
+}
+
+.swiper-slide.swiper-slide-active {
+  background-color: rgba(41, 10, 47, 1);
+  opacity: 1;
+  display: block !important;
+}
+
+.swiper-slide:not(.swiper-slide-active) img {
+  z-index: -1;
+}
+.swiper-slide:not(.swiper-slide-active):nth-child(1) {
+  transform: translate3d(calc(-4.25% + 0px), 0px, -100px) rotateZ(0deg) scale(1) !important;
+  opacity: 0.75;
+}
+.swiper-slide:not(.swiper-slide-active):nth-child(2) {
+  transform: translate3d(calc(7.25% - 636px), 0px, -100px) rotateZ(0deg)
+    scale(1) !important;
+  opacity: 0.5;
+}
+.swiper-slide:not(.swiper-slide-active):nth-child(3) {
+  transform: translate3d(calc(16% - 1276px), 0px, -200px) rotateZ(0deg) scale(1) !important;
+  opacity: 0.3;
+}
+.swiper-slide:not(.swiper-slide-active):nth-child(4) {
+  transform: translate3d(calc(25% - 1916px), 0px, -300px) rotateZ(0deg) scale(1) !important;
+  opacity: 0.3;
+}
+.swiper-slide:not(.swiper-slide-active):nth-child(5) {
+  transform: translate3d(calc(-90% - 1916px), 0px, -300px) rotateZ(0deg)
+    scale(1) !important;
+  opacity: 0.3;
+}
+.swiper-slide:not(.swiper-slide-active):nth-child(6) {
+  transform: translate3d(calc(-90% - 1916px), 0px, -300px) rotateZ(0deg)
+    scale(1) !important;
+  opacity: 0.3;
+}
+.swiper-slide:not(.swiper-slide-active):nth-child(7) {
+  transform: translate3d(calc(-90% - 1916px), 0px, -300px) rotateZ(0deg)
+    scale(1) !important;
+  opacity: 0.3;
+}
+.swiper-slide:not(.swiper-slide-active):nth-child(8) {
+  transform: translate3d(calc(-90% - 1916px), 0px, -300px) rotateZ(0deg)
+    scale(1) !important;
+  opacity: 0.3;
+}
+.swiper-slide:not(.swiper-slide-active):nth-child(9) {
+  transform: translate3d(calc(-90% - 1916px), 0px, -300px) rotateZ(0deg)
+    scale(1) !important;
+  opacity: 0.3;
+}
+
+.mySwipperButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -15px;
+  padding: 0 200px;
+}
+
+.mySwipperButtons .swiper-button-next {
+  position: relative;
+  margin: 0px;
+  height: fit-content;
+}
+
+.mySwipperButtons .swiper-button-next::after {
+  content: none;
+}
+
+.mySwipperButtons .swiper-button-prev {
+  position: relative;
+  margin: 0px;
+  height: fit-content;
+}
+
+.mySwipperButtons .swiper-button-prev::after {
+  content: none;
+}
+
+@media (max-width: 1400px) {
+  /* swiper slides  */
+  .swiper-slide:not(.swiper-slide-active):nth-child(1) {
+    transform: translate3d(calc(-4.25% + 0px), 0px, -100px) rotateZ(0deg)
+      scale(1) !important;
+    opacity: 0.75;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(2) {
+    transform: translate3d(calc(24.25% - 636px), 0px, -100px) rotateZ(0deg)
+      scale(1) !important;
+    opacity: 0.5;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(3) {
+    transform: translate3d(calc(33% - 1276px), 0px, -200px) rotateZ(0deg)
+      scale(1) !important;
+    opacity: 0.3;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(4) {
+    transform: translate3d(calc(50% - 1916px), 0px, -300px) rotateZ(0deg)
+      scale(1) !important;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(5) {
+    transform: translate3d(calc(67% - 960px), 0px, -400px) rotateZ(0deg)
+      scale(1) !important;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(6) {
+    transform: translate3d(calc(67% - 1200px), 0px, -500px) rotateZ(0deg)
+      scale(1) !important;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(7) {
+    transform: translate3d(calc(67% - 1440px), 0px, -600px) rotateZ(0deg)
+      scale(1) !important;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(8) {
+    transform: translate3d(calc(67% - 1680px), 0px, -700px) rotateZ(0deg)
+      scale(1) !important;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(9) {
+    transform: translate3d(calc(67% - 1940px), 0px, -800px) rotateZ(0deg)
+      scale(1) !important;
+  }
+
+  .mySwipperButtons {
+    padding: 0 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* swiper slides  */
+  .swiper-slide:not(.swiper-slide-active):nth-child(1) {
+    transform: translate3d(calc(-4.25% + 0px), 0px, -100px) rotateZ(0deg)
+      scale(1) !important;
+    opacity: 0.75;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(2) {
+    transform: translate3d(calc(47.25% - 636px), 0px, -100px) rotateZ(0deg)
+      scale(1) !important;
+    opacity: 0.5;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(3) {
+    transform: translate3d(calc(70% - 1276px), 0px, -200px) rotateZ(0deg)
+      scale(1) !important;
+    opacity: 0.3;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(4) {
+    transform: translate3d(calc(140% - 1916px), 0px, -300px) rotateZ(0deg)
+      scale(1) !important;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(5) {
+    transform: translate3d(calc(93% - 960px), 0px, -400px) rotateZ(0deg)
+      scale(1) !important;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(6) {
+    transform: translate3d(calc(93% - 1200px), 0px, -500px) rotateZ(0deg)
+      scale(1) !important;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(7) {
+    transform: translate3d(calc(93% - 1440px), 0px, -600px) rotateZ(0deg)
+      scale(1) !important;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(8) {
+    transform: translate3d(calc(93% - 1680px), 0px, -700px) rotateZ(0deg)
+      scale(1) !important;
+  }
+  .swiper-slide:not(.swiper-slide-active):nth-child(9) {
+    transform: translate3d(calc(93% - 1940px), 0px, -800px) rotateZ(0deg)
+      scale(1) !important;
+  }
+
+  .mySwipperButtons {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .requirement-section-p1 {
+    padding: 0;
+  }
+
+  .requirement-section-p1 h1 {
+    font-size: 28px;
+    line-height: 33.6px;
+    padding: 0;
+  }
+
+  .requirement-section-p1 p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .mySwiperMainAugmentation {
+    margin-top: 24px;
+  }
+
+  .swiper-slide:not(.swiper-slide-active) {
+    opacity: 0 !important;
+  }
+}

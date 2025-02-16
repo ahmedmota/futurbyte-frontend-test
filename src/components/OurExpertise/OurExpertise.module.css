@@ -1,0 +1,200 @@
+.sideNav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tabLink {
+  width: 312px;
+  height: 61px;
+  padding: 24px 16px;
+  border-radius: 6px;
+  display: flex;
+  border: 2px solid #cdcdcd;
+  align-items: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 72px;
+  text-align: center;
+  color: #0a0d31;
+}
+.tabLink:hover {
+  color: #0a0d31;
+}
+.tabLink:focus {
+  color: white !important;
+}
+.activeTab {
+  background: #250c2d;
+  color: white;
+  border: unset;
+}
+.activeTab:hover {
+  background: #250c2d;
+  color: white;
+}
+.expertiseTools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.toolItem {
+  width: 228px;
+  height: 64px;
+  padding: 16px 32px;
+  border-radius: 12px;
+  border: 1px solid #cdcdcd;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  cursor: pointer;
+  background-color: white;
+}
+.toolItem:hover {
+  border: 1px solid #290a2f;
+  box-shadow: 60px 50px 100px 0px #00000014;
+}
+.name {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: #0a0d31;
+  position: relative;
+  margin: 0;
+}
+/* .name::after {
+  position: absolute;
+  content: "";
+  background: url(/line.png);
+  width: 770px;
+  height: 1px;
+  top: 12px;
+  margin-left: 24px;
+} */
+.expertise {
+  font-size: 48px;
+  font-weight: 600;
+  color: #0a0d31;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.expertise-name-main {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.expertise-line {
+  flex: 1;
+}
+
+.expertise-line-md {
+  flex: 1;
+}
+
+.expertise-line-md {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .tabLink,
+  .toolItem {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .name::after {
+    display: none;
+  }
+  .expertiseModal {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .name {
+    font-size: 18px;
+  }
+  .tabLink,
+  .toolItem {
+    font-size: 15px;
+  }
+  .toolItem {
+    border: 1px solid #656565;
+    padding: 16px 16px;
+  }
+  .expertiseSection {
+    padding-bottom: 0;
+  }
+  .expertise {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sideNav {
+    flex-direction: unset;
+    gap: 30px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    height: 70px;
+  }
+  .expertiseTools {
+    justify-content: center;
+  }
+  .name {
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    white-space: normal;
+  }
+  /* .name::before {
+    position: absolute;
+    content: "";
+    background: url(/ourexpertisebefore.png);
+    width: 126px;
+    height: 2px;
+    left: 0;
+    top: 11px;
+  } */
+
+  .sectionExpertise::after {
+    position: absolute;
+    content: "" !important;
+    background: url(/ourexpertiseafter.png);
+    width: 126px;
+    height: 2px;
+    right: 0;
+    top: 11px;
+  }
+  .tabLink,
+  .toolItem {
+    font-size: 16px;
+  }
+  .toolItem {
+    border: 1px solid #656565;
+    padding: 16px 16px;
+  }
+  .expertiseSection {
+    padding-bottom: 0;
+  }
+  .expertise {
+    font-size: 30px;
+  }
+  .expertise-line {
+    display: none;
+  }
+  .expertise-line-md {
+    display: block;
+  }
+}

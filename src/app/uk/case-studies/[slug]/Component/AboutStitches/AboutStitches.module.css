@@ -1,0 +1,33 @@
+.stitches {
+  padding-top: 130px;
+}
+.stitches h3 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #0a0d31;
+  text-align: center;
+}
+.stitches p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b3b3b;
+  text-align: center;
+  max-width: 971px;
+  margin: 0 auto;
+}
+.stitches img {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.designing {
+  background-color: #80808000;
+}
+
+@media (max-width: 768px) {
+  .stitches {
+    padding-top: 0;
+  }
+}

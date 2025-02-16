@@ -1,0 +1,55 @@
+.endtoend {
+  padding-top: 24px;
+}
+.endtoend h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #0a0d31;
+}
+.endtoend p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b3b3b;
+}
+.endtoend {
+  padding-right: 185px;
+}
+.verticalline {
+  border-radius: 12px;
+  border: 1.5px solid #b256bd;
+  display: flex;
+  overflow: hidden;
+  height: 362px;
+}
+.duration {
+  font-size: 22px;
+  font-weight: 500;
+  color: #0a0d31;
+  text-align: center;
+  margin-top: 13px;
+}
+.CommerceSolution {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+@media (max-width: 992px) {
+  .CommerceSolution {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .endtoend {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .verticalline {
+    height: 232px;
+    padding-left: 20px;
+  }
+
+  .endtoend {
+    text-align: center;
+  }
+}

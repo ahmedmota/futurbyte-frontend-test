@@ -1,0 +1,170 @@
+.contRecent {
+  position: relative;
+}
+.contRecent::after {
+  position: absolute;
+  content: "";
+  background: url(../../../../../../public/recentbefore.svg);
+  width: 327px;
+  height: 350px;
+  right: 0;
+  top: 0;
+  top: 250px;
+  z-index: -1;
+}
+.contRecent {
+  position: relative;
+}
+.contRecent::before {
+  position: absolute;
+  content: "";
+  background: url(../../../../../../public/recentafter.svg);
+  width: 583px;
+  height: 578px;
+  left: 0;
+  top: 0;
+  top: 850px;
+  z-index: -1;
+}
+.recentBlogs {
+  font-size: 48px;
+  font-weight: 600;
+  color: #0a0d31;
+}
+.blogInput {
+  width: 265px;
+  height: 50px;
+  padding: 15px 16px 15px 16px;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+}
+.inputSet {
+  position: relative;
+  text-align: right;
+}
+.inputSet img {
+  position: absolute;
+  margin-top: 14px;
+  right: 15px;
+}
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0a0d31;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b3b3b;
+  padding-bottom: 10px;
+}
+.learnMore a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #290a2f;
+  text-decoration: unset;
+  position: relative;
+}
+.learnMore a::after {
+  position: absolute;
+  content: "";
+  background-color: #0a0d31;
+  width: 96px;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+}
+.dataPoint {
+  border: 1px solid #cdcdcd;
+  padding: 16px;
+  border-radius: 12px;
+}
+.navTabs {
+  width: auto;
+  height: 52px;
+  padding: 16px;
+  border-radius: 6px;
+  border: 1.5px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a0d31;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.activeTab {
+  background-color: #290a2f;
+}
+.activeTab {
+  color: white !important;
+}
+.navMenus {
+  display: flex;
+  gap: 20px;
+  margin-top: 19px;
+  margin-bottom: 27.5px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.loadmore {
+  width: 163px;
+  height: 56px;
+  padding: 20px 24px;
+  border-radius: 6px;
+  background: #250c2d;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: unset;
+  gap: 6px;
+  cursor: pointer;
+}
+.leasrnsrt {
+  height: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.moreCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dataPoint:hover {
+  box-shadow: 33px 28px 68px 0px #00000014;
+  border: unset;
+}
+.topLayer {
+  margin-bottom: 80px;
+}
+.blog-linking {
+  text-decoration: none;
+  cursor: pointer;
+  height: 100%;
+}
+@media screen and (max-width: 991px) {
+  .contRecent::after,
+  .contRecent::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .recentBlogs {
+    font-size: 28px;
+    font-weight: 600;
+    color: #0a0d31;
+  }
+  .recentBlogs {
+    text-align: center;
+  }
+  .blogInput {
+    width: 100%;
+  }
+}

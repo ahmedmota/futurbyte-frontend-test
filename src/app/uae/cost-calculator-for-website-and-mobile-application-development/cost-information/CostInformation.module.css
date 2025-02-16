@@ -1,0 +1,23 @@
+.cost-information h1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #0a0d31;
+  margin-bottom: 32px;
+}
+
+.cost-information p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3b3b3b;
+  margin: 0;
+}

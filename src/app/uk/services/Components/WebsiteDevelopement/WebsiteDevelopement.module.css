@@ -1,0 +1,253 @@
+.websiteheading {
+  font-size: 42px;
+  font-weight: 600;
+  color: #0a0d31;
+}
+.servicesfocus {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.listBullet {
+  display: flex;
+}
+.bulletList {
+  padding-left: unset;
+}
+.bulletList li {
+  list-style: none;
+  padding-bottom: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+.bulletList li a {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+.colLeftClass {
+  padding-left: 70px;
+  border: 11px solid #ffecf0;
+  border-radius: 28px;
+}
+.colRightIndustries {
+  padding-right: 100px;
+}
+.colleftIndustries {
+  padding-right: 100px;
+}
+.LearnMore {
+  width: 170px;
+  height: 56px;
+  padding: 20px 24px 20px 24px;
+  background: #250c2d;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: unset;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.class0 {
+  position: relative;
+}
+.class0::after {
+  position: absolute;
+  content: "";
+  background: url(../../../../../../public/bgline.svg);
+  background-repeat: no-repeat;
+  width: 152px;
+  height: 107%;
+  top: -15px;
+  right: -19px;
+  z-index: -1;
+  border-radius: 11px;
+  background-size: cover;
+}
+.classNo0 {
+  position: relative;
+}
+.classNo0::after {
+  position: absolute;
+  content: "";
+  background: url(../../../../../../public/bgline.svg);
+  background-repeat: no-repeat;
+  width: 152px;
+  height: 107%;
+  top: -15px;
+  right: -19px;
+  z-index: -1;
+  border-radius: 11px;
+  background-size: cover;
+}
+.class1 {
+  position: relative;
+}
+.class1::before {
+  position: absolute;
+  content: "";
+  background: url(../../../../../../public/bgline.svg);
+  background-repeat: no-repeat;
+  width: 152px;
+  height: 107%;
+  top: -15px;
+  left: -19px;
+  z-index: -1;
+  border-radius: 11px;
+  background-size: cover;
+}
+.classNo1 {
+  position: relative;
+}
+.classNo1::before {
+  position: absolute;
+  content: "";
+  background: url(../../../../../../public/bgline.svg);
+  background-repeat: no-repeat;
+  width: 152px;
+  height: 107%;
+  top: -15px;
+  left: -19px;
+  z-index: -1;
+  border-radius: 11px;
+  background-size: cover;
+}
+.class2 {
+  position: relative;
+}
+.class2::after {
+  position: absolute;
+  content: "";
+  background: url(../../../../../../public/bgline.svg);
+  background-repeat: no-repeat;
+  width: 152px;
+  height: 107%;
+  top: -15px;
+  right: -19px;
+  z-index: -1;
+  border-radius: 11px;
+  background-size: cover;
+}
+.classNo2 {
+  position: relative;
+}
+.classNo2::after {
+  position: absolute;
+  content: "";
+  background: url(../../../../../../public/bgline.svg);
+  background-repeat: no-repeat;
+  width: 152px;
+  height: 107%;
+  top: -15px;
+  right: -19px;
+  z-index: -1;
+  border-radius: 11px;
+  background-size: cover;
+}
+.class3 {
+  position: relative;
+}
+.class3::before {
+  position: absolute;
+  content: "";
+  background: url(../../../../../../public/bgline.svg);
+  background-repeat: no-repeat;
+  width: 152px;
+  height: 107%;
+  top: -15px;
+  left: -19px;
+  z-index: -1;
+  border-radius: 11px;
+  background-size: cover;
+}
+.classNo3 {
+  position: relative;
+}
+.classNo3::before {
+  position: absolute;
+  content: "";
+  background: url(../../../../../../public/bgline.svg);
+  background-repeat: no-repeat;
+  width: 152px;
+  height: 107%;
+  top: -15px;
+  left: -19px;
+  z-index: -1;
+  border-radius: 11px;
+  background-size: cover;
+}
+@media screen and (max-width: 1400px) {
+  .websiteheading {
+    font-size: 36px;
+  }
+  .servicesfocus {
+    font-size: 16px;
+  }
+  .bulletList li {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .colLeftClass {
+    padding-left: unset;
+  }
+  .colRightIndustries {
+    padding-right: unset;
+  }
+}
+@media screen and (max-width: 767px) {
+  .stulpong img {
+    border: 7px solid #ffecf0;
+    border-radius: 23px;
+  }
+
+  .class0::after,
+  .class1::after,
+  .class2::after,
+  .class3::after {
+    display: none;
+  }
+  .classNo0::after,
+  .classNo1::after,
+  .classNo2::after,
+  .classNo3::after {
+    display: none;
+  }
+  .class1::before,
+  .class3::before,
+  .classNo1::after,
+  .classNo3::after {
+    display: none;
+  }
+  .LearnMore,
+  .learnMoreSec {
+    width: fit-content;
+  }
+  .websiteheading {
+    font-size: 28px;
+  }
+  .digitalSolutions {
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .bulletList li,
+  .bulletList li a {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .colleftIndustries {
+    padding-right: unset;
+  }
+}

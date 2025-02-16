@@ -1,0 +1,76 @@
+.businessStrategic {
+  width: 92%;
+  margin-left: auto;
+}
+.consultancy {
+  width: 306px;
+  height: 56px;
+  padding: 20px 24px;
+  border-radius: 6px;
+  background: #250c2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 72px;
+  text-decoration: unset;
+}
+@media screen and (max-width: 1400px) {
+  .consultancy {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .privileged h4 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .businessStrategic {
+    text-align: center;
+    width: unset;
+  }
+  .consultancy {
+    margin-top: 30px !important;
+    width: 50%;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .consultancy {
+    width: 58%;
+  }
+  .privileged h4 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30.8px;
+    text-align: left;
+  }
+  .privileged p {
+    text-align: left;
+  }
+  .businessStrategic {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+  .privileged {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .consultancy {
+    width: 306px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .consultancy {
+    width: 100%;
+  }
+}

@@ -1,0 +1,143 @@
+.rightSection {
+  background: #290a2f;
+  color: white;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.formTitle {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43.2px;
+  text-align: center;
+}
+
+.formSubtitle {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 15px;
+}
+
+.submitButton {
+  width: 100%;
+  height: 56px;
+  border-radius: 6px;
+  background: #b256bd;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 72px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: unset;
+}
+.benefitList {
+  padding-left: 0;
+}
+.benefitList li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+.benefitList {
+  margin-top: 24px;
+  columns: 2;
+}
+.expert {
+  color: #b256bd;
+}
+.form input {
+  width: 100%;
+  height: 53px;
+  padding: 20px 24px;
+  border-radius: 6px;
+  border: 1.5px solid #545454;
+  background-color: unset;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  line-height: 72px;
+}
+.form input::placeholder {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 72px;
+}
+.form select {
+  width: 100%;
+  height: 53px;
+  padding-left: 24px;
+  border-radius: 6px;
+  border: 1.5px solid #545454;
+  background-color: unset;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  line-height: 72px;
+}
+.form select {
+  background-image: url("../../../../../../public/arrowlong.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  line-height: 1;
+}
+.form textarea {
+  width: 100%;
+  height: 81px;
+  background-color: unset;
+  padding: 12px 24px 48px 24px;
+  border-radius: 6px;
+  border: 1.5px solid #545454;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.form textarea::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.form select option {
+  color: black;
+}
+.leftSection p {
+  max-width: 500px;
+}
+.contactBg {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 767px) {
+  .rightSection {
+    width: 93%;
+    margin: 0 auto;
+  }
+  .contactBg {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}

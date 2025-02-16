@@ -1,0 +1,100 @@
+.websiteheading {
+  font-size: 42px;
+  font-weight: 600;
+  color: #0a0d31;
+}
+.servicesfocus {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.listBullet {
+  display: flex;
+}
+.bulletList {
+  padding-left: unset;
+}
+.bulletList li {
+  list-style: none;
+  padding-bottom: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.colLeftClass {
+  padding-right: 70px;
+  border: 11px solid #ffecf0;
+  border-radius: 28px;
+}
+.colleftIndustries {
+  padding-left: 100px;
+}
+.colrightIndustries {
+  padding-right: 100px;
+}
+
+.LearnMore {
+  width: 170px;
+  height: 56px;
+  padding: 20px 24px 20px 24px;
+  background: #250c2d;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: unset;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+@media screen and (max-width: 1400px) {
+  .websiteheading {
+    font-size: 36px;
+  }
+  .servicesfocus {
+    font-size: 16px;
+  }
+  .bulletList li {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .Appdevelopmentrow {
+    flex-direction: column-reverse;
+  }
+  .Appdevelopmentrow col {
+    padding: unset !important;
+  }
+  .colLeftClass {
+    padding-right: unset;
+  }
+  .colleftIndustries,
+  .colrightIndustries {
+    padding-left: unset;
+  }
+}
+@media screen and (max-width: 767px) {
+  .LearnMore,
+  .learnMoreSec {
+    width: fit-content;
+  }
+  .websiteheading {
+    font-size: 28px;
+  }
+  .digitalSolutions {
+    margin-bottom: 0px;
+  }
+  .bulletList li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .digitalSolutions {
+    padding-top: 0;
+  }
+}

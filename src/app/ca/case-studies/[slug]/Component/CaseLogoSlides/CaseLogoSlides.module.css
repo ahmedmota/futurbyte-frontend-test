@@ -1,0 +1,12 @@
+.CaseLogo {
+  background: url("../../../../../../../public/servi.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 768px) {
+  .CaseLogo {
+    height: 376px;
+    overflow: hidden;
+  }
+}

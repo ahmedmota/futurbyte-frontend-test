@@ -1,0 +1,231 @@
+.website-development-banner {
+  margin-bottom: 0;
+  padding: 0 15rem;
+}
+
+.services-main-heading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  color: #0a0d31;
+}
+
+.case-studies-heading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  text-align: center;
+  color: #0a0d31;
+}
+
+.multi-services-main-heading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  text-align: center;
+  color: #0a0d31;
+  margin-bottom: 20px;
+}
+
+.approach-heading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  text-align: center;
+  color: #0a0d31;
+}
+
+.impact-section {
+  background-image: url("../../../../public/impact-bg.svg");
+}
+
+.web-development-services::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -40%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../../public/vector.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.impactServices {
+  text-align: center;
+}
+.impactServices {
+  font-size: 48px;
+  font-weight: 600;
+  color: #0a0d31;
+}
+.impact-section {
+  padding-top: 106px;
+  padding-bottom: 96px;
+}
+.specificallyServices {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.web-development-services {
+  padding-bottom: 120px;
+}
+.why-us-hero-section {
+  padding-top: 120px;
+}
+.mergemulti {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.mergemulti::before {
+  background-image: url("../../../../public/vector-bg.svg");
+  background-repeat: no-repeat;
+  content: " ";
+  width: 324px;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.faqsWeb {
+  padding-top: 130px;
+  padding-bottom: 60px;
+}
+.why-us-hero-section h2 {
+  max-width: 450px;
+}
+.why-us-hero-section p {
+  max-width: 450px;
+}
+.approach-main-top::before {
+  background: url("../../../../public/big-vector.svg");
+  content: " ";
+  width: 543px;
+  height: 548.51px;
+  position: absolute;
+  left: -20%;
+  z-index: -1;
+  top: -30%;
+}
+.faqsWeb::before {
+  background: url("../../../../public/case-study-vector.svg");
+  content: " ";
+  width: 543px;
+  height: 548.51px;
+  position: absolute;
+  left: -25%;
+  z-index: -1;
+  bottom: 5%;
+}
+@media (max-width: 992px) {
+  .website-development-banner {
+    padding: 0 8rem;
+  }
+  .why-us-hero-section h2 {
+    max-width: unset;
+  }
+  .why-us-hero-section p {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 992px) {
+  .website-development-banner {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .website-development-banner {
+    padding: 0 1rem;
+  }
+
+  .services-main-heading {
+    font-size: 28px;
+    line-height: 33.6px;
+    text-align: center;
+  }
+
+  .approach-heading {
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+
+  .multi-services-main-heading {
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+
+  .approach-main-top::before {
+    display: none;
+  }
+  .faqsWeb::before {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .why-us-hero-section {
+    position: relative;
+  }
+  .why-us-hero-section::after {
+    position: absolute;
+    content: "";
+    background: url(../../../../public/shapedot.png);
+    width: 94px;
+    height: 94px;
+    top: 223px;
+    right: 0;
+  }
+  .descriptionlong {
+    margin-bottom: 30px !important;
+  }
+  .impact-section {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .trust-banner-col {
+    padding: 0px;
+  }
+  .impactServices {
+    font-size: 28px;
+    font-weight: 600;
+    color: #0a0d31;
+  }
+  .posut {
+    font-size: 28px;
+    font-weight: 600;
+    color: #0a0d31;
+    padding-bottom: 10px;
+  }
+  .our-web-development-process {
+    padding-top: 0;
+  }
+  .website-development-faqs {
+    margin-top: 80px;
+  }
+
+  .impact-section {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .specificallyServices {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  .web-development-services {
+    padding-bottom: 40px;
+  }
+  .why-us-hero-section {
+    padding-top: 0;
+  }
+  .mergemulti {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .faqsWeb {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+}

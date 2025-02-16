@@ -1,0 +1,30 @@
+.outcomes {
+  padding-bottom: 70px;
+}
+.projectOcto {
+  font-size: 36px;
+  font-weight: 600;
+  color: #0a0d31;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.outlong {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  border: 1px solid #e7e5e5;
+  border-radius: 8px;
+  padding: 20px 16px;
+  height: 85px;
+}
+.outlong p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .outcomes {
+    padding-bottom: 0;
+  }
+}

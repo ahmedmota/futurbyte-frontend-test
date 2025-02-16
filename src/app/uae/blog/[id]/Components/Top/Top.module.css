@@ -1,0 +1,144 @@
+.top-main-all {
+  padding: 0px 7.5rem;
+}
+
+.top-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  padding: 0px 10rem;
+}
+
+.top-inner .page-link {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  color: #a65eb8;
+}
+
+.top-inner .blog-title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  color: #0a0d31;
+  margin: 0;
+  padding: 0 6px;
+}
+
+.blog-tags-main {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.blog-tags-main button {
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #3f444b;
+  background-color: #ffffff;
+  white-space: nowrap;
+}
+
+.top-inner .blog-writer-info {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #3b3b3b;
+  margin: 0;
+}
+
+.top-inner .blog-writer-name {
+  color: #a65eb8;
+  font-weight: 500;
+}
+
+.blog-info-part-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-info-part .img-content {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.blog-info-part .blog-img {
+  margin-top: 24px;
+  border-radius: 12px;
+}
+
+.blog-info-part .img-content img {
+  border-radius: 50%;
+}
+
+.blog-info-part .img-content span {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  color: #3f444b;
+}
+
+.blog-info-part .blog-info-part-md {
+  display: flex;
+  gap: 24px;
+}
+
+.blog-info-part .blog-info-part-md span {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1400px) {
+  .top-inner {
+    padding: 0 6.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .top-inner {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .top-main-all {
+    padding: 0;
+  }
+
+  .top-inner {
+    padding: 0;
+    gap: 16px;
+  }
+
+  .blog-info-part-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .blog-info-part-md {
+    flex-direction: row-reverse;
+  }
+
+  .top-inner .blog-title {
+    /* md  */
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1px;
+  }
+
+  .blog-info-part {
+    padding: 0 1rem;
+  }
+
+  .blog-info-part .blog-img {
+    height: auto;
+  }
+}

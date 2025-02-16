@@ -1,0 +1,65 @@
+.main-div-growth.add-space {
+  margin-bottom: 76px;
+}
+
+.growth-main {
+  gap: 24px;
+}
+
+.growth-main img {
+  margin-bottom: 2px;
+}
+
+.growth-main .growth-main-content h4 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  color: #0a0d31;
+}
+
+.growth-main .growth-main-content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #3b3b3b;
+  margin-bottom: 0;
+}
+
+.add-space {
+  margin-bottom: 76px;
+}
+
+@media (max-width: 768px) {
+  .growth-main img {
+    width: 45px;
+    height: 56px;
+  }
+
+  .main-div-growth.add-space {
+    margin-bottom: 40px;
+  }
+
+  .main-div-growth {
+    margin-bottom: 40px;
+    padding: 0 16px;
+  }
+
+  .growth-main .growth-hr {
+    width: 100%;
+  }
+
+  .growth-main .growth-main-content {
+    padding: 0;
+  }
+
+  .growth-main .growth-main-content h4 {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .growth-main .growth-main-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,86 @@
+.slide h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.clientCommitment {
+  display: flex;
+  gap: 22px;
+}
+.edsidera {
+  border: 1px solid #d1d1d1;
+  text-align: -webkit-center;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  width: 97%;
+  height: 435px;
+  position: relative;
+  display: block;
+}
+.slide {
+  margin-top: 20px;
+}
+.edsideralog {
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+.edsiderLaptop {
+  margin-top: 28px;
+}
+.compinieslogo {
+  position: absolute;
+  top: 21px;
+  width: 40%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.sliderCompaniesBuilt h2 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .edsidera {
+    height: 375px;
+  }
+  .sliderCompaniesBuilt h2 {
+    max-width: unset;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .edsidera {
+    width: 100%;
+    height: 495px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slide h3 {
+    text-align: center;
+  }
+  .readymode {
+    text-align: center;
+  }
+  .edsidera {
+    height: auto;
+  }
+  .compinieslogo {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .edsiderLaptop {
+    margin-top: 40px;
+  }
+  .sliderCompaniesBuilt {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .edsiderLaptop {
+    margin-top: 40px;
+    height: 285px;
+  }
+}

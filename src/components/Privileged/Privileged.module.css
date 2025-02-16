@@ -1,0 +1,36 @@
+.businessStrategic {
+  width: 92%;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .privileged h4 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .businessStrategic {
+    text-align: center;
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .privileged h4 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30.8px;
+  }
+  .businessStrategic {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+  .privileged {
+    padding-top: 0;
+  }
+
+  .priviledged-inner-col {
+    padding: 0px;
+  }
+}

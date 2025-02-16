@@ -1,0 +1,68 @@
+name: Build and Deploy NextJS App
+on:
+  push:
+    branches:
+      - main
+jobs:
+  BuildAndDeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build App
+        env:
+          NEXT_PUBLIC_API_URL: https://api.futurbyte.ae
+          NEXT_PUBLIC_FE_ORIGIN: https://futurbyte.co
+          NEXT_PUBLIC_API_TOKEN: ${{ vars.NEXT_PUBLIC_API_TOKEN }}
+          NEXT_PUBLIC_LIVE_CHAT_LICENSE: ${{ vars.NEXT_PUBLIC_LIVE_CHAT_LICENSE }}
+          NEXT_PUBLIC_GOOGLE_TGM_KEY: ${{ vars.NEXT_PUBLIC_GOOGLE_TGM_KEY }}
+          NEXT_PUBLIC_HUBSPOT_PORTAL_ID: ${{ vars.NEXT_PUBLIC_HUBSPOT_PORTAL_ID }}
+          NEXT_PUBLIC_HUBSPOT_KEY: ${{ vars.NEXT_PUBLIC_HUBSPOT_KEY }}
+          NEXT_PUBLIC_CLUTCH_WIDGET_TYPE: 4
+          NEXT_PUBLIC_CLUTCH_COMPANY_ID: 2272268
+        run: npm run build
+
+      - name: Create .env and compress the build
+        run: |
+          cat <<EOF > .env
+          APP_ENV='production'
+          AWS_REGION=me-central-1
+          AWS_S3_BUCKET_NAME=${{ vars.AWS_S3_BUCKET_NAME }}
+          EMAIL_FROM=noreply@futurbyte.co
+          SMTP_HOST=smtp.office365.com
+          SMTP_PORT=587
+          EMAIL_TLS=true
+          SMTP_PASSWORD=${{ secrets.SMTP_PASSWORD }}
+          EOF
+          zip -r build.zip .next public package.json package-lock.json next.config.mjs .env
+
+      - name: Deploy to EC2
+        env:
+          EC2_USER: ubuntu
+          SSH_KEY: ${{ secrets.KEY }}
+          EC2_HOST: ${{ secrets.HOST }}
+          APP_NAME: fb-nextjs
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          scp -o StrictHostKeyChecking=no build.zip $EC2_USER@$EC2_HOST:/home/$EC2_USER/build.zip
+          ssh -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST << EOF
+            rm -rf /home/$EC2_USER/$APP_NAME && \
+            unzip /home/$EC2_USER/build.zip -d /home/$EC2_USER/$APP_NAME && \
+            export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh && \
+            cd /home/$EC2_USER/$APP_NAME && \
+            npm install --omit=dev && \
+            pm2 restart $APP_NAME && \
+            rm /home/$EC2_USER/build.zip
+          EOF

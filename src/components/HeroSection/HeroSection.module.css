@@ -1,0 +1,94 @@
+.heroSec {
+  position: relative;
+  background-image: url("../../../public/herosectionbg.png");
+  min-height: 481px;
+  background-position: center;
+  background-size: cover;
+  max-height: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.heroSectionText {
+  width: 100%;
+}
+.heroSectionText {
+  display: flex;
+  align-items: center;
+}
+.bussinees {
+  width: 51%;
+  padding: 40px 0;
+}
+.heroSideImage img {
+  position: absolute;
+  bottom: 0px;
+}
+.bussinees p {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.schedule {
+  width: 306px;
+  height: 56px;
+  border-radius: 6px;
+  background: #b256bd;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 72px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+@media screen and (max-width: 1400px) {
+  .bussinees h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .bussinees h2 {
+    font-size: 30px;
+  }
+  .bussinees p {
+    margin-top: 10px;
+    margin-bottom: 17px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .heroSec {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .heroSectionBgImaebg {
+    display: none;
+  }
+  .heroSectionText {
+    position: unset;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .heroSec {
+    background: #250c2d;
+    padding-top: 40px;
+    text-align: center;
+    border-radius: 16px;
+  }
+  .schedule {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+  }
+  .heroSideImage img {
+    position: unset;
+  }
+  .bussinees {
+    width: unset;
+  }
+}

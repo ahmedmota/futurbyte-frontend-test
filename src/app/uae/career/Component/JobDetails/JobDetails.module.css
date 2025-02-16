@@ -1,0 +1,562 @@
+.meta p {
+  margin: 0;
+  font-size: 14px;
+  color: gray;
+}
+
+.sidebar {
+  text-align: center;
+}
+
+.applyButton {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.shareSection button {
+  margin-right: 10px;
+}
+.jobover h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #0a0d31;
+}
+.jobover ul li {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b3b3b;
+}
+.responsibilities h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #0a0d31;
+  margin-top: 30px;
+}
+.responsibilities li {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b3b3b;
+}
+.experience h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #0a0d31;
+  margin-top: 30px;
+}
+.experience li {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b3b3b;
+}
+.skills {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #3b3b3b !important;
+}
+.proficiency li {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b3b3b;
+  list-style: disc;
+}
+.proficiency {
+  margin-top: 5px;
+}
+.strong h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #0a0d31;
+  margin-top: 30px;
+}
+.strong li {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b3b3b;
+}
+.applyNow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.applyNow h3 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0a0d31;
+}
+.applyNow a {
+  width: 164px;
+  height: 56px;
+  padding: 20px 24px;
+  border-radius: 6px;
+  background: #b256bd;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-decoration: unset;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.engineer {
+  display: flex;
+  gap: 13.46px;
+  align-items: center;
+}
+.engineer p {
+  margin-bottom: 0;
+  font-size: 22px;
+  font-weight: 500;
+  color: #0a0d31;
+  text-transform: capitalize;
+}
+.applynow {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.applynowset {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.overview p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #0a0d31;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.overview p span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b3b3b;
+}
+.jobDetails {
+  margin-top: 130px;
+}
+.brief {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.brief p {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b3b3b;
+}
+.brief h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #0a0d31;
+}
+.dubai {
+  position: relative;
+}
+.dubai::before {
+  position: absolute;
+  content: "";
+  background: url(../../../../../../public/caeerbefore.png);
+  width: 530px;
+  height: 578px;
+  left: 0;
+  top: 85px;
+  z-index: -1;
+}
+.school {
+  justify-content: center;
+}
+.seeMore {
+  font-size: 48px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.inputFiled input[type="text"],
+.inputFiled input[type="email"],
+.inputFiled input[type="tel"] {
+  width: 100%;
+  height: 53px;
+  padding: 20px 24px;
+  border-radius: 6px;
+  border: 1.5px solid #545454;
+  background-color: unset;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.inputFiled textarea {
+  width: 100%;
+  height: 234px;
+  padding: 20px 24px;
+  border-radius: 6px;
+  background-color: unset;
+  border: 1.5px solid #545454;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.inputFiled textarea {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.inputFiled textarea {
+  border: 1.5px solid #545454 !important;
+  outline: unset;
+  color: white;
+}
+.inputFiled textarea::placeholder {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.inputFiled input[type="text"]::placeholder,
+.inputFiled input[type="email"]::placeholder,
+.inputFiled input[type="tel"]::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.inputFiled input[type="text"]:focus-visible,
+.inputFiled input[type="email"]:focus-visible,
+.inputFiled input[type="tel"]:focus-visible {
+  border: 1.5px solid #545454 !important;
+  outline: unset;
+}
+.selse {
+  width: 100%;
+  height: 52px;
+  padding: 13px 24px;
+  border-radius: 6px;
+  border: 1.5px solid #545454;
+  background-color: unset;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.selse:focus {
+  border: 1.5px solid #545454;
+  outline: unset;
+  box-shadow: unset;
+}
+.selse option {
+  color: black;
+}
+.submit {
+  width: 100%;
+  height: 56px;
+  background: #b256bd;
+  color: #ffffff;
+  border: unset;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.selse {
+  background-image: url("../../../../../../public/arrowlong.svg");
+}
+.consent {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.formconsent {
+  display: flex;
+  gap: 16px;
+  padding-right: 100px;
+}
+
+.attachmentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.attachmentLabel {
+  display: flex;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 0px 0px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.attachmentText {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.attachmentIcon {
+  font-size: 18px;
+}
+
+.attachmentInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.attachmentHint {
+  font-size: 14px;
+  color: #ccc;
+}
+.postupload h3 {
+  margin-bottom: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.postupload p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.formstatus {
+  width: 142px;
+  height: 46px;
+  border-radius: 4px;
+  color: black;
+  background: #f1f0f0;
+  margin-bottom: 49px !important;
+  margin-top: 46px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin: 0 auto;
+  position: relative;
+}
+.formstatus::before {
+  position: absolute;
+  content: "";
+  background: #25a348;
+  width: 7px;
+  height: 100%;
+  left: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.experiencequiet {
+  position: relative;
+}
+.experiencequiet::after {
+  position: absolute;
+  content: "";
+  background-color: #cdcdcd;
+  width: 1px;
+  height: 33px;
+  top: 11px;
+  left: -25px;
+}
+.experiencequiet::before {
+  position: absolute;
+  content: "";
+  background-color: #cdcdcd;
+  width: 1px;
+  height: 33px;
+  top: 14px;
+  right: -40px;
+}
+.experienceLevel {
+  position: relative;
+}
+.experienceLevel::before {
+  position: absolute;
+  content: "";
+  background-color: #cdcdcd;
+  width: 1px;
+  height: 33px;
+  top: 14px;
+  right: -40px;
+}
+.spacingLayout {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Code by Maqsood Date: 12/29/2024 */
+.applyNowBottom {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+  width: 100%;
+}
+.applyNowBottom a {
+  width: 100%;
+  height: 56px;
+  padding: 20px 24px;
+  border-radius: 6px;
+  background: #b256bd;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-decoration: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+@media screen and (max-width: 1399px) {
+  .experiencequiet::after,
+  .experiencequiet::before,
+  .experienceLevel::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .applyNow {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .brief {
+    display: block;
+    columns: 2;
+  }
+}
+@media screen and (max-width: 991px) {
+  .school {
+    justify-content: unset;
+  }
+}
+@media screen and (max-width: 767px) {
+  .spacingLayout {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .brief h4 {
+    font-size: 18px;
+  }
+
+  .formconsent {
+    padding-right: unset;
+  }
+  .postupload h3 {
+    font-size: 18px;
+  }
+  .postupload p,
+  .consent {
+    font-size: 16px;
+  }
+
+  .seeMore {
+    font-size: 30px;
+    font-weight: 500;
+    max-width: 250px;
+  }
+  .inputFiled input[type="text"]::placeholder,
+  .inputFiled input[type="email"]::placeholder,
+  .inputFiled input[type="tel"]::placeholder,
+  .inputFiled textarea::placeholder {
+    font-size: 16px;
+  }
+
+  .selse {
+    font-size: 16px;
+  }
+
+  .jobDetails {
+    margin-top: 40px;
+  }
+
+  .brief {
+    display: flex;
+    columns: unset;
+    flex-direction: column;
+    gap: 11px;
+  }
+  .dubai::before {
+    display: none;
+  }
+  .applyNow h3 {
+    font-size: 27px;
+    font-weight: 600;
+    color: #0a0d31;
+  }
+  .applyNow a {
+    margin-bottom: 12px;
+  }
+  .applynowset {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .brief {
+    border-top: unset;
+    border-bottom: unset;
+  }
+  .engineer p {
+    font-size: 18px;
+  }
+  .overview p span {
+    font-size: 16px;
+  }
+  .overview p {
+    font-size: 18px;
+  }
+  .brief p {
+    font-size: 16px;
+  }
+  .brief h4 {
+    font-size: 20px;
+  }
+  .JobDetails h4 {
+    font-size: 20px;
+  }
+  .jobover ul li {
+    font-size: 16px;
+  }
+  .responsibilities h2,
+  .experience h2,
+  .strong h3 {
+    font-size: 20px;
+  }
+  .responsibilities li,
+  .experience li,
+  .strong li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .applyNowBottom {
+    display: flex;
+  }
+}

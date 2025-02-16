@@ -1,0 +1,119 @@
+.appDevelopemnt {
+  display: flex;
+  gap: 30px;
+}
+.appDevelopemnt a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #89898b;
+  text-decoration: unset;
+}
+.bussines {
+  box-shadow: 6px 36px 81px 0px #0000001a;
+  padding-bottom: 33px;
+  padding-top: 43px;
+}
+.active {
+  position: relative;
+}
+.active {
+  color: #b256bd !important;
+}
+.active::after {
+  position: absolute;
+  content: "";
+  width: -webkit-fill-available;
+  left: 0;
+  bottom: -33px;
+  border: 2px solid #b256bd;
+}
+.ecommerceClass section {
+  padding-top: 0;
+}
+.websitdeve {
+  position: relative;
+}
+.websitdeve::after {
+  position: absolute;
+  content: "";
+  background: url("../../../../public/servicesbg.png");
+  width: 318px;
+  height: 350px;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.appdevelopbg {
+  position: relative;
+}
+.appdevelopbg::after {
+  position: absolute;
+  content: "";
+  background: url("../../../../public/appbg.png");
+  width: 581px;
+  height: 578px;
+  top: 33%;
+  left: 0;
+  z-index: -1;
+}
+.ecommercefaqs {
+  position: relative;
+}
+.ecommercefaqs::after {
+  position: absolute;
+  content: "";
+  background: url("../../../../public/appbg.png");
+  width: 581px;
+  height: 578px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.herosec {
+  position: relative;
+}
+.herosec::after {
+  position: absolute;
+  content: "";
+  background: url("../../../../public/herosecbg.png");
+  width: 443px;
+  height: 578px;
+  top: -110px;
+  right: 0;
+  z-index: -1;
+}
+.seobg {
+  position: relative;
+}
+.seobg::after {
+  position: absolute;
+  content: "";
+  background: url("../../../../public/seobg.png");
+  width: 333px;
+  height: 350px;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+}
+.pageNavMobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .seobg::after,
+  .herosec::after,
+  .ecommercefaqs::after,
+  .appdevelopbg::after,
+  .websitdeve::after {
+    display: none;
+  }
+  .pageNavNone {
+    display: none;
+  }
+  .pageNavMobile {
+    display: block;
+  }
+  .herosec section {
+    margin-top: 10px !important;
+  }
+}

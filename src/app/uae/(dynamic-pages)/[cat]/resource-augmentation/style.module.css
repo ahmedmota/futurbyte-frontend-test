@@ -1,0 +1,85 @@
+.augmentation-section-1 {
+  position: relative;
+}
+
+.augmentation-section-1::before {
+  content: " ";
+  background-image: url("./../../../../../../public/aug-section-1-vector.svg");
+  background-repeat: no-repeat;
+  width: 330.48px;
+  height: 396.03px;
+  position: absolute;
+  bottom: -15%;
+  right: 0;
+  z-index: -1;
+}
+
+.augmentation-section-1 .a-s-1-container::before {
+  content: " ";
+  background-image: url("./../../../../../../public/splash-bg-resource-1.svg");
+  background-repeat: no-repeat;
+  width: 543.58px;
+  height: 548.51px;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  z-index: -1;
+}
+
+.augmentation-section-2 {
+  background-image: url("../../../../../../public/augmentation-bg.svg");
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.augmentation-section-3 {
+  position: relative;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.augmentation-section-3::before {
+  content: " ";
+  background-image: url("./../../../../../../public/aug-section-2-vector.svg");
+  background-repeat: no-repeat;
+  width: 543.58px;
+  height: 548.51px;
+  position: absolute;
+  top: -45%;
+  left: 0;
+  z-index: -1;
+}
+
+.augmentation-section-5 {
+  position: relative;
+}
+
+.augmentation-section-5::before {
+  content: " ";
+  width: 324.12px;
+  height: 417.25px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  right: 0;
+  background-image: url("./../../../../../../public/aug-section-5-vector.svg");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .augmentation-section-2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .augmentation-section-3 {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .augmentation-section-5 {
+    padding-top: 24px;
+  }
+}

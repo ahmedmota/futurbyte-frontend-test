@@ -1,0 +1,257 @@
+.featuredBlogs {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+.featuredBlogs::after {
+  position: absolute;
+  content: "";
+  background: url(../../../../../../public/recentbg.svg);
+  width: 256px;
+  height: 350px;
+  right: 0;
+  top: 0;
+  top: 50px;
+  z-index: -1;
+}
+.needContServicesdon {
+  object-fit: cover;
+  height: 262px;
+  border-radius: 12px;
+}
+.softfpoalternativeText {
+  object-fit: cover;
+  height: 548px;
+  border-radius: 12px;
+}
+.title {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  color: #0a0d31;
+  margin-bottom: 30px;
+}
+.capitalize {
+  width: 50%;
+  position: relative;
+}
+.capitalizeDevelopment {
+  width: 50%;
+  position: relative;
+}
+.newFeatured {
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+.newFeaturedmount {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+
+.software {
+  position: absolute;
+  width: auto;
+  height: 34px;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  top: 16px;
+  left: 24px;
+}
+.practices {
+  position: absolute;
+  bottom: 28px;
+  left: 24px;
+  right: 40px;
+}
+.software h4 {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #3f444b;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.practices h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.date {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.ellips {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.ellips p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.blogFeadtu {
+  display: flex;
+  gap: 24px;
+}
+.softwareServices {
+  position: absolute;
+  width: auto;
+  height: 34px;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  top: 16px;
+  left: 16px;
+}
+.needContServices {
+  position: relative;
+  width: 100%;
+}
+
+.softwareServices h4 {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #3f444b;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.practicesServices {
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
+  right: 5px;
+}
+.practicesServices h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.dateServices {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 5px;
+}
+.blog-linking {
+  text-decoration: none;
+  height: 100%;
+}
+@media screen and (max-width: 1399px) {
+  .practicesServices h3 {
+    font-size: 16px;
+  }
+  .ellips p {
+    font-size: 13px;
+  }
+  .practices h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .dateServices {
+    gap: 6px;
+  }
+  .ellips {
+    gap: 5px;
+  }
+  .ellips p {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .featuredBlogs::after {
+    display: none;
+  }
+  .newFeaturedmount {
+    columns: 1;
+  }
+  .blogFeadtu {
+    flex-direction: column;
+  }
+  .capitalize,
+  .capitalizeDevelopment {
+    width: 100%;
+  }
+  .softfpo {
+    width: 100%;
+  }
+  .software {
+    top: 13px;
+    left: 13px;
+  }
+  .practices {
+    left: 13px;
+  }
+  .software h4 {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .practices h3 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .ellips p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .practicesServices {
+    bottom: 28px;
+  }
+  .practicesServices h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .practices h3 {
+    line-height: 1.1;
+  }
+  .softwareServices {
+    top: 13px;
+    left: 13px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .newFeaturedmount {
+    grid-template-columns: auto;
+  }
+  .title {
+    font-size: 40px;
+    color: #0a0d31;
+    margin-bottom: 25px;
+  }
+  .blogFeadtu {
+    display: flex;
+    gap: 16px;
+  }
+  .featuredBlogs {
+    padding-top: 34px;
+    padding-bottom: 44px;
+  }
+  .dateServices {
+    gap: 16px;
+  }
+  .title {
+    font-weight: 700;
+  }
+}

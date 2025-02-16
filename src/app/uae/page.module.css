@@ -1,0 +1,101 @@
+.logobg {
+  position: relative;
+}
+.logobg::after {
+  position: absolute;
+  content: "";
+  background: url(/logosliderbg.png);
+  width: 252px;
+  height: 351px;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.choosebg {
+  position: relative;
+}
+.choosebg::before {
+  position: absolute;
+  content: "";
+  background: url(/choosefuturbytebg.png);
+  width: 333px;
+  height: 557px;
+  left: 0;
+  top: -190px;
+  z-index: -1;
+}
+.heroSection {
+  position: relative;
+}
+.heroSection::before {
+  position: absolute;
+  content: "";
+  background: url(/schdulebg.png);
+  width: 504px;
+  height: 557px;
+  right: 0;
+  top: 295px;
+  z-index: -1;
+}
+.ModernBusinesses {
+  position: relative;
+}
+.ModernBusinesses::before {
+  position: absolute;
+  content: "";
+  background: url(/heroimg.svg);
+  width: 333px;
+  height: 557px;
+  left: 0;
+  top: -150px;
+  z-index: -1;
+}
+.verticalslide {
+  position: relative;
+}
+.verticalslide::before {
+  position: absolute;
+  content: "";
+  background: url(/verticalslide.png);
+  width: 581px;
+  height: 578px;
+  left: 0;
+  top: -39px;
+  z-index: -1;
+}
+.verticalbg {
+  position: relative;
+}
+.verticalbg::before {
+  position: absolute;
+  content: "";
+  background: url(/verticalbg.png);
+  width: 211px;
+  height: 603px;
+  left: 0;
+  top: -247px;
+  z-index: -1;
+}
+
+.softwaredevelopment {
+  background: url(/customerbg.png);
+}
+
+@media screen and (max-width: 1024px) {
+  .logobg::after,
+  .verticalbg::before,
+  .ModernBusinesses::before {
+    display: none;
+  }
+  .verticalslide::before {
+    display: none;
+  }
+  .heroSection::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .verticalslide section {
+    padding-top: 0;
+  }
+}

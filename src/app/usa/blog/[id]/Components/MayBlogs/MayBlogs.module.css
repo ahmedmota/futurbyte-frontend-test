@@ -1,0 +1,74 @@
+.may-like-blog {
+  display: flex;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.may-like-blog-img {
+  height: 75px;
+  width: 75px;
+  border-radius: 4px;
+}
+
+.may-like-blog-img img {
+  width: inherit;
+  height: -webkit-fill-available;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.may-like-blog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 75px;
+  justify-content: center;
+}
+
+.may-like-blog-content h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  color: #0a0d31;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2; /* Limit to two lines */
+  text-overflow: ellipsis; /* Add ellipsis at the end of the second line */
+}
+
+.may-like-blog-content-inner {
+  display: flex;
+  gap: 12px;
+}
+
+.may-like-blog-content-inner span {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  color: #3f444b;
+}
+
+.may-blogs-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.may-blogs-main .may-blogs-main-heading {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  color: #0a0d31;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .may-blogs-main .may-blogs-main-heading {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: center;
+  }
+}

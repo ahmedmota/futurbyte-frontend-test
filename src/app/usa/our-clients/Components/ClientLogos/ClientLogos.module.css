@@ -1,0 +1,19 @@
+.client-logo {
+  border: 0.74px solid #cdcdcd;
+  background-color: #ffffff;
+  border-radius: 8.83px;
+  display: flex;
+  align-items: center;
+  height: 235px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .client-logo {
+    height: 120px;
+  }
+
+  .client-logo img {
+    max-width: 107px;
+  }
+}

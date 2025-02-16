@@ -1,0 +1,225 @@
+.banner {
+  position: relative;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  padding-top: 245px;
+  padding-bottom: 136px;
+}
+
+.augmentationBanner {
+  padding: 0;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+/* .schedule {
+  width: 306px;
+  height: 56px;
+  border-radius: 6px;
+  background: #b256bd;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 72px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+} */
+.schedule {
+  /* width: 306px;
+  height: 56px; */
+  border-radius: 6px;
+  background: #b256bd;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  /* line-height: 72px; */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 20px 24px;
+  margin-top: 1rem;
+}
+.seeOurWork {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 72px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.bannerButtons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 15px;
+}
+.bannerLogos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 29px;
+  margin-top: 30px;
+}
+.homeBnner .bannerContainer,
+.augmentationBanner .bannerContainer {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.homeBnner p,
+.augmentationBanner p {
+  margin-bottom: 0.3rem;
+}
+.homeBnner .bannerContainer .para,
+.augmentationBanner .bannerContainer .para {
+  padding: 0 6rem;
+}
+.bannerIndustries {
+  margin-bottom: 0;
+}
+.bannerIndustries p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.bannerAbout .bannerContainer {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.bannerAbout {
+  margin-bottom: 0;
+}
+.whyBanner .bannerContainer p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
+}
+.websiteBanner {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1400px) {
+  .homeBnner .bannerContainer,
+  .augmentationBanner .bannerContainer {
+    max-width: 78%;
+    margin: 0 auto;
+  }
+
+  .bannerAbout .bannerContainer {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .homeBnner .bannerContainer,
+  .augmentationBanner .bannerContainer {
+    max-width: 92%;
+    margin: 0 auto;
+  }
+  .bannerIndustries .bannerContainer {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .bannerAbout .bannerContainer h1 {
+    font-size: 58px;
+  }
+  .whyBanner .bannerContainer h1 {
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 76.8px;
+  }
+  .homeBnner .bannerContainer .para,
+  .augmentationBanner .bannerContainer .para {
+    padding: 0 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .homeBnner .bannerContainer,
+  .augmentationBanner .bannerContainer {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .bannerAbout .bannerContainer h1 {
+    font-size: 40px;
+  }
+  .bannerIndustries .bannerContainer h1 {
+    font-size: 40px;
+  }
+  .whyBanner .bannerContainer h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .whyBanner .bannerContainer p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .homeBnner .bannerContainer .para {
+    padding: 0 2rem;
+  }
+  .augmentationBanner .bannerContainer .para {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bannerAbout .bannerContainer h1,
+  .bannerIndustries .bannerContainer h1 {
+    font-size: 36px;
+  }
+  .bannerAbout .bannerContainer p,
+  .bannerIndustries .bannerContainer p {
+    font-size: 16px;
+  }
+  .homeBnner .bannerContainer h1 {
+    font-size: 40px;
+  }
+  .augmentationBanner .bannerContainer h1 {
+    font-size: 36px;
+  }
+  .homeBnner .bannerContainer p,
+  .augmentationBanner .bannerContainer p {
+    font-size: 16px;
+  }
+  .bannerButtons {
+    gap: 0px;
+    flex-direction: column;
+  }
+  .augmentationBanner {
+    padding: 0;
+    min-height: 622px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 567px) {
+  .banner {
+    padding-bottom: 71px;
+  }
+  .augmentationBanner {
+    padding: 0;
+  }
+  .schedule {
+    width: 83%;
+    height: 56px;
+    padding: unset;
+    line-height: unset;
+  }
+  .homeBnner .bannerContainer p {
+    padding: 0 1rem;
+  }
+}

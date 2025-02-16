@@ -1,0 +1,39 @@
+.swiper-button-prev {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  padding: 16px;
+  border: 1px solid #cdcdcd;
+  border-radius: 80px;
+  z-index: 10; /* Ensure buttons are above the slides */
+  left: -65px;
+  top: 33%;
+}
+
+.swiper-button-prev::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../../../../../public/arrow-left.svg");
+  background-repeat: no-repeat;
+}
+
+.swiper-button-next {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  padding: 16px;
+  border: 1px solid #cdcdcd;
+  z-index: 10; /* Ensure buttons are above the slides */
+  border-radius: 80px;
+  right: -65px;
+  top: 33%;
+}
+
+.swiper-button-next::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../../../../../public/arrow-right.svg");
+  background-repeat: no-repeat;
+}

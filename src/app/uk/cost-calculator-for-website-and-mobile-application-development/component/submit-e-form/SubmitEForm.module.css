@@ -1,0 +1,193 @@
+.submit-e-form {
+  min-width: 588px;
+  border-radius: 12px;
+  padding: 32px;
+  background-color: #ffffff;
+  pointer-events: auto;
+  top: 143px;
+}
+
+.submit-e-form .submit-form-form-close-btn {
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1;
+  background: transparent;
+}
+
+.submit-e-form .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-body-text-div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  margin: 32px 0 40px 0;
+}
+
+.submit-e-form-modal-content {
+  border: none;
+}
+
+.submit-e-form .modal-body p {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #0a0d31;
+  margin: 0;
+}
+
+.submit-e-form .modal-body p span {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #b256bd;
+}
+
+.submit-e-form .modal-body span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.2px;
+  text-align: center;
+  color: #3b3b3b;
+}
+
+.modal-e-form input {
+  height: 58px;
+  padding: 24px 16px;
+  border: 1.5px solid #d9d9d9;
+  outline: none;
+  border-radius: 6px;
+}
+
+.modal-e-form textarea {
+  height: 116px;
+}
+
+.modal-e-form input::placeholder,
+.modal-e-form textarea::placeholder {
+  color: #3b3b3b;
+}
+
+.modal-e-form input:focus,
+.modal-e-form textarea:focus {
+  border: 1.5px solid #d9d9d9;
+  box-shadow: none;
+  color: #3b3b3b;
+}
+
+.first-form-line {
+  display: flex;
+  gap: 16px;
+}
+
+.submit-e-form-btn {
+  height: 64px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  background-color: #250c2d;
+  padding: 24px 40px;
+  border-radius: 6px;
+  color: #ffffff;
+  border: none;
+  justify-content: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 72px;
+  text-align: center;
+}
+
+.submit-e-form-btn:hover {
+  background-color: #250c2d;
+}
+
+.success-tick-main {
+  display: flex;
+  justify-content: center;
+}
+
+.success-tick {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 26px 11px 18px;
+  border-radius: 4px;
+  background-color: #f1f0f0;
+  border-left: 7px solid #25a348;
+  margin-top: 24px;
+}
+
+.success-tick p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  text-align: left;
+  color: #3b3b3b;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .submit-e-form {
+    min-width: unset;
+    padding: 32px 20px;
+  }
+
+  .document-icon {
+    width: 72px;
+    height: 72px;
+  }
+
+  .modal-e-form {
+    width: 100%;
+  }
+
+  .first-form-line {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .modal-body-text-div {
+    margin-top: 24px;
+  }
+
+  .submit-e-form .modal-body p {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+  }
+
+  .submit-e-form .modal-body p span {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    text-align: center;
+  }
+
+  .submit-e-form .modal-body span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.2px;
+    text-align: center;
+  }
+}

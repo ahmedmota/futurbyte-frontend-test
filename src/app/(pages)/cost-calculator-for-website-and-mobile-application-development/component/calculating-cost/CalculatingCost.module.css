@@ -1,0 +1,212 @@
+.calculating-cost-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  margin-right: 11.5px;
+}
+
+.calculating-cost-main::before {
+  content: " ";
+  width: 1px;
+  height: 100%;
+  border-left: 1px dashed #656565;
+  position: absolute;
+  left: 32px;
+}
+
+.calculating-cost-item-inner {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.calculating-cost-item-inner .btn-count {
+  width: 64px;
+  height: 64px;
+  padding: 24.5px 20.5px;
+  gap: 8px;
+  border-radius: 80px;
+  border: 1.5px solid #250c2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  position: relative;
+  color: #656565;
+  background-color: #ffffff;
+}
+
+.calculating-cost-item-inner .btn-count.active {
+  background-color: #250c2d;
+  color: #ffffff;
+}
+
+.calculating-cost-item-inner .btn-count.first-btn-count::before {
+  content: " ";
+  width: 3px;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 30px;
+  top: -63px;
+}
+
+.calculating-cost-item-inner .btn-count.last-btn-count::after {
+  content: " ";
+  width: 3px;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 30px;
+  bottom: -63px;
+}
+
+.calculating-cost-item {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+  border-radius: 12px;
+  border: 1px solid #000000;
+}
+
+.calculating-cost-item h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  color: #0a0d31;
+}
+
+.calculating-cost-item p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #3b3b3b;
+  margin: 0;
+}
+
+.calculating-cost-detail {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  margin-left: 11.5px;
+}
+
+.calculating-cost-detail h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  text-align: left;
+  margin: 0;
+}
+
+.calculating-cost-detail p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #3b3b3b;
+}
+
+.calculating-cost-detail a {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  color: #ffffff;
+  background-color: #b256bd;
+  height: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: fit-content;
+  gap: 6;
+}
+
+@media screen and (max-width: 992px) {
+  .calculating-cost-main-row {
+    gap: 40px;
+  }
+
+  .calculating-cost-detail {
+    align-items: center;
+  }
+
+  .calculating-cost-detail h1 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .calculating-cost-detail p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .calculating-cost-detail a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 72px;
+  }
+
+  .calculating-cost-item-inner .btn-count.first-btn-count::before {
+    height: 118%;
+    top: -74px;
+  }
+
+  .calculating-cost-item-inner .btn-count.last-btn-count::after {
+    bottom: -73px;
+    height: 116%;
+  }
+
+  .calculating-cost-item-inner {
+    gap: 28px;
+  }
+
+  .calculating-cost-item {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    border-radius: 12px;
+    border: 1px solid #000000;
+  }
+
+  .calculating-cost-item h3 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+  }
+
+  .calculating-cost-item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .calculating-cost-main {
+    margin-right: 0;
+  }
+
+  .calculating-cost-detail {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .calculating-cost-item-inner .btn-count {
+    padding: 26px 23px;
+  }
+}

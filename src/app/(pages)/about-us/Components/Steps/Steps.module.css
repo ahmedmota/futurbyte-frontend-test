@@ -1,0 +1,110 @@
+.step {
+  gap: 20px;
+}
+
+.step-count {
+  margin-bottom: 2.1rem;
+}
+
+.step-count.last-count {
+  margin-bottom: 0;
+}
+
+.step-card-el {
+  padding: 30px 0;
+}
+
+.circle {
+  width: 77.65px;
+  text-align: center;
+  padding: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 24.26px;
+  z-index: 1;
+  background-color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  color: #0a0d31;
+}
+
+.main-steps::before {
+  content: "";
+  width: 1px;
+  background-color: #ccc;
+  position: absolute;
+  height: 100%;
+  left: 50px;
+}
+
+.el-1 {
+  flex: 1;
+  width: 10px;
+  height: 100%;
+}
+
+.el-1.active-el {
+  z-index: 1;
+  background-color: white;
+}
+
+.el-1.active-el.active-el-bg {
+  background: url("../../../../../../public/impact-bg.svg");
+}
+
+.step-title {
+  width: 15%;
+  line-height: 33px;
+}
+
+.step-description {
+  width: 50%;
+  line-height: 27px;
+}
+
+.step-img {
+  width: 35%;
+  border-radius: 12px;
+  height: 117px;
+}
+
+.bg-pink {
+  background-color: #fcf6ff;
+}
+
+@media (max-width: 992px) {
+  .step-count,
+  .step-count.last-count {
+    margin-bottom: 0.5rem;
+  }
+
+  .circle {
+    width: 58px;
+  }
+
+  .main-steps::before {
+    content: none;
+  }
+
+  .step-title,
+  .step-img,
+  .step-description {
+    width: 100%;
+  }
+
+  .step-card-el {
+    padding: 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .step-img {
+    height: 118px;
+  }
+  .circle {
+    font-size: 16px;
+  }
+  .step-description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,83 @@
+.joinourteam {
+  background: url(../../../../../../public/joinourteam.png);
+  padding: 36px;
+  width: 877px;
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 130px;
+}
+.joinourteam h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #0a0d31;
+}
+.joinourteam p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b3b3b;
+  margin-bottom: 20px;
+}
+.joinourteam a,
+.joinourteam button {
+  border-radius: 6px;
+  background: #b256bd;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 164px;
+  gap: 10px;
+  height: 56px;
+  border: none;
+}
+.dubai {
+  position: relative;
+}
+.dubai::before {
+  position: absolute;
+  content: "";
+  background: url(../../../../../../public/careerater.png);
+  width: 325px;
+  height: 350px;
+  right: 0;
+  top: -156px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1199px) {
+  .joinourteam {
+    background-size: cover;
+    display: flex;
+    gap: 31px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .joinourteam img {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .joinourteam {
+    padding: 35px;
+    text-align: center;
+  }
+  .joinourteam h3 {
+    font-size: 20px;
+  }
+  .joinourteam p {
+    font-size: 16px;
+  }
+  .joinourteam a {
+    width: 100%;
+  }
+  .joinourteam {
+    margin-bottom: 40px;
+  }
+  .joinourteam button {
+    margin: 0 auto;
+  }
+}

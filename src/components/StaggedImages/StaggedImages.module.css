@@ -1,0 +1,149 @@
+.textRow {
+  display: flex;
+  justify-content: space-between; /* Creates space between the two texts */
+  align-items: center; /* Aligns texts vertically in the center */
+  padding: 0px; /* Optional padding */
+  margin-bottom: 40px;
+}
+
+.textRow h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  text-align: left;
+  color: #0a0d31;
+}
+
+.stagged1 {
+  /* background-image: url('../../../public/staggedImage1.png'); */
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.staggedCenterImage {
+  /* background-image: url('../../../public/staggedImage1.png'); */
+  width: 100%;
+  height: 48%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.stagged2 {
+  /* background-image: url('../../../public/staggedImage1.png'); */
+  width: 100%;
+  height: 45%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.leftText {
+  font-size: 16px; /* Customize font size */
+}
+
+.textRow p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #3b3b3b;
+}
+
+.staggeredRow {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.staggeredColumn {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  width: 100%;
+  padding: 0px 10px;
+  aspect-ratio: 1 / 1.2;
+  overflow: hidden;
+  /* height: width * 1.2 */
+  position: relative;
+}
+
+.staggeredColumn2 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  width: 100%;
+  padding: 20px 10px;
+  aspect-ratio: 1 / 0.4;
+  overflow: hidden;
+  /* height: width * 1.2 */
+  position: relative;
+}
+
+.staggeredColumn img {
+  margin-top: 25px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .staggeredColumn {
+    -ms-flex: auto;
+    flex: auto;
+    max-width: auto;
+    margin: 20px 0px;
+  }
+
+  .staggeredColumn2 {
+    -ms-flex: auto;
+    flex: auto;
+    max-width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .textRow h2 {
+    font-size: 27px;
+    line-height: 32.4px;
+  }
+
+  .textRow p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .staggeredColumn {
+    padding: 0;
+  }
+
+  .staggeredColumn .stagged1 {
+    border-radius: 12px;
+  }
+
+  .staggeredColumn .staggedCenterImage {
+    border-radius: 12px;
+  }
+
+  .staggeredColumn2:last-of-type {
+    aspect-ratio: 1;
+  }
+
+  .staggeredColumn2 .stagged1 {
+    border-radius: 12px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .staggeredColumn {
+    -ms-flex: auto;
+    flex: auto;
+    max-width: auto;
+    margin: 20px 0px;
+  }
+}

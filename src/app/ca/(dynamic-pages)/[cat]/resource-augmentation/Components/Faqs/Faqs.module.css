@@ -1,0 +1,84 @@
+.headercard {
+  padding: 16px;
+  border-radius: 12px !important;
+  border: unset;
+  display: flex;
+}
+.inactiveCard div {
+  background-color: white;
+}
+.headercard button {
+  color: #250c2d;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  padding: unset;
+}
+.headercard button:hover {
+  color: #250c2d;
+}
+.activeCard .headercard button,
+.activeCard p {
+  color: white !important;
+}
+.activeCard .headercard {
+  padding-bottom: 0;
+}
+.activeCard p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 85px;
+  position: relative;
+  top: -9px;
+  margin-bottom: unset;
+}
+.activeCard {
+  background-color: #250c2d;
+}
+.asked {
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  color: #0a0d31;
+  margin-bottom: 43px;
+}
+.onlineFaqs {
+  padding-top: 70px;
+  padding-bottom: 130px;
+}
+
+@media screen and (max-width: 991px) {
+  .asked {
+    font-size: 27px;
+  }
+  .headercard button {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  .headercard button img {
+    width: 52px;
+    height: 52px;
+  }
+  .headercard img {
+    width: 52px;
+    height: 52px;
+  }
+  .activeCard p {
+    font-size: 16px;
+  }
+  .activeCard p {
+    margin-right: unset;
+  }
+
+  .onlineFaqs {
+    padding-bottom: 70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .onlineFaqs {
+    padding-top: unset;
+    padding-bottom: 24px;
+  }
+}

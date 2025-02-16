@@ -1,0 +1,23 @@
+.slideContent {
+  width: 175px;
+  height: 180px;
+  padding: 23px;
+  border-radius: 12px;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .peacenewbird {
+    position: relative;
+    left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .peacenewbird {
+    left: 0;
+  }
+}

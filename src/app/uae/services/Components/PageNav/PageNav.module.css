@@ -1,0 +1,81 @@
+.appdevelopment {
+  display: flex;
+  gap: 16.57px;
+  justify-content: space-between;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.appdevelopment a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #89898b;
+  text-decoration: unset;
+  /* padding-top: 31.5px;
+  padding-bottom: 31.5px; */
+  display: flex;
+  height: 90px;
+  align-items: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.appdevelopment a:hover {
+  color: #b256bd;
+}
+.bussines {
+  box-shadow: 6px 36px 81px 0px #0000001a;
+}
+.active {
+  position: relative;
+}
+.active {
+  color: #b256bd !important;
+}
+.active::after {
+  position: absolute;
+  content: "";
+  width: -webkit-fill-available;
+  left: 0;
+  bottom: 0;
+  border: 2px solid #b256bd;
+}
+@-moz-document url-prefix() {
+  .active::after {
+    width: -moz-available !important;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .appdevelopment a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .appdevelopment a {
+    font-size: 15px;
+  }
+  .appdevelopment {
+    display: flex;
+    gap: 16px;
+  }
+  .appdevelopment a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .appdevelopment {
+    display: flex;
+    gap: 16px;
+    overflow: scroll;
+    white-space: nowrap;
+  }
+  .appdevelopment a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bussines {
+    margin-bottom: 60px;
+  }
+}
