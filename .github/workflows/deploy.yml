@@ -1,15 +1,17 @@
 name: Build and Deploy NextJS App
+
 on:
   push:
     branches:
       - main
+
 jobs:
   BuildAndDeploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-        
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -21,8 +23,8 @@ jobs:
 
       - name: Build App
         env:
-          NEXT_PUBLIC_API_URL: https://api.futurbyte.ae
-          NEXT_PUBLIC_FE_ORIGIN: https://futurbyte.co
+          NEXT_PUBLIC_API_URL: http://13.201.188.14:5000
+          NEXT_PUBLIC_FE_ORIGIN: http://13.201.188.14:3000
           NEXT_PUBLIC_API_TOKEN: ${{ vars.NEXT_PUBLIC_API_TOKEN }}
           NEXT_PUBLIC_LIVE_CHAT_LICENSE: ${{ vars.NEXT_PUBLIC_LIVE_CHAT_LICENSE }}
           NEXT_PUBLIC_GOOGLE_TGM_KEY: ${{ vars.NEXT_PUBLIC_GOOGLE_TGM_KEY }}
@@ -46,23 +48,23 @@ jobs:
           EOF
           zip -r build.zip .next public package.json package-lock.json next.config.mjs .env
 
-      - name: Deploy to EC2
+      - name: Deploy to New EC2
         env:
           EC2_USER: ubuntu
-          SSH_KEY: ${{ secrets.KEY }}
-          EC2_HOST: ${{ secrets.HOST }}
+          NEW_EC2_SSH_KEY: ${{ secrets.NEW_EC2_SSH_KEY }}
+          NEW_EC2_HOST: ${{ secrets.NEW_EC2_HOST }}
           APP_NAME: fb-nextjs
         run: |
           mkdir -p ~/.ssh/
-          echo "$SSH_KEY" > ~/.ssh/id_rsa
+          echo "$NEW_EC2_SSH_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          scp -o StrictHostKeyChecking=no build.zip $EC2_USER@$EC2_HOST:/home/$EC2_USER/build.zip
-          ssh -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST << EOF
+          scp -o StrictHostKeyChecking=no build.zip $EC2_USER@$NEW_EC2_HOST:/home/$EC2_USER/build.zip
+          ssh -o StrictHostKeyChecking=no $EC2_USER@$NEW_EC2_HOST << EOF
             rm -rf /home/$EC2_USER/$APP_NAME && \
             unzip /home/$EC2_USER/build.zip -d /home/$EC2_USER/$APP_NAME && \
             export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh && \
             cd /home/$EC2_USER/$APP_NAME && \
             npm install --omit=dev && \
-            pm2 restart $APP_NAME && \
+            pm2 restart $APP_NAME || pm2 start npm --name $APP_NAME -- start && \
             rm /home/$EC2_USER/build.zip
           EOF
