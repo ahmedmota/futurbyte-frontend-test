@@ -14,12 +14,13 @@ pipeline {
         SSH_KEY = credentials('frontend_ssh_key')
         EC2_HOST = credentials('EC2_HOST')
         APP_NAME = 'fb-nextjs' // Change to 'fb-nextjs-stg' for staging
+        GIT_CREDENTIALS = credentials('Github')
     }
     stages {
         stage('Checkout Code') {
             steps {
                 git branch: 'main', // Change to 'staging' for staging
-                url: 'https://github.com/ahmedmota/ahmedmota-futurbyte-frontend-test.git'
+                url: 'https://github.com/ahmedmota/ahmedmota-futurbyte-frontend-test.git', Github:
             }
         }
         stage('Build App') {
