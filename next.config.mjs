@@ -10,7 +10,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "futurbyte.co",
+        hostname: "http://13.201.188.14:5000",
         port: "",
         pathname: "/wp-content/uploads/**",
       },
